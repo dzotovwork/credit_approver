@@ -1,26 +1,24 @@
 {
-  "name": "credit_approver",
-  "version": "1.0.0",
-  "description": "check, can you get a credit or not?",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dzotovwork/credit_approver.git"
-  },
-  "author": "d.zotov <dzotovwork@yandex.ru>",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/dzotovwork/credit_approver/issues"
-  },
-  "homepage": "https://github.com/dzotovwork/credit_approver",
-  "devDependencies": {
-    "typescript": "^3.9.3",
-    "prettier": "^2.0.5"
-  },
-  "dependencies": {
-    "gh-pages": "^2.2.0"
-  }
+    "name": "credit_approver",
+    "version": "1.0.0",
+    "description": "check, can you get a credit or not?",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/dzotovwork/credit_approver.git"
+    },
+    "author": "d.zotov <dzotovwork@yandex.ru>",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/dzotovwork/credit_approver/issues"
+    },
+    "homepage": "https://github.com/dzotovwork/credit_approver",
+    "devDependencies": {
+        "typescript": "^3.9.3",
+        "prettier": "^2.0.5"
+    },
+    "dependencies": {}
 }
