@@ -20,5 +20,7 @@
         "typescript": "^3.9.3",
         "prettier": "^2.0.5"
     },
-    "dependencies": {}
+    "dependencies": {
+        "gh-pages": "^2.2.0"
+    }
 }
