@@ -15,9 +15,12 @@
   "bugs": {
     "url": "https://github.com/dzotovwork/credit_approver/issues"
   },
-  "homepage": "https://github.com/dzotovwork/credit_approver#readme",
+  "homepage": "https://github.com/dzotovwork/credit_approver",
   "devDependencies": {
     "typescript": "^3.9.3",
     "prettier": "^2.0.5"
+  },
+  "dependencies": {
+    "gh-pages": "^2.2.0"
   }
 }
