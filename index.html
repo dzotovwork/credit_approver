@@ -13,7 +13,6 @@
                 padding-right: 10px;
             }
             .field {
-                clear: both;
                 text-align: right;
                 line-height: 25px;
             }
@@ -27,11 +26,11 @@
         <form class="form">
             <div class="field">
                 <label for="age">Возраст [not negative int], лет</label>
-                <input id="age" type="number" class="validate" />
+                <input id="age" type="number" required min="0"/>
             </div>
             <div class="field">
                 <label for="sex">Пол</label>
-                <select name="sex" type="text" id="sex">
+                <select name="sex" type="text" id="sex" required>
                     <option value="" disabled selected></option>
                     <option value="M">M</option>
                     <option value="F">F</option>
@@ -39,7 +38,7 @@
             </div>
             <div class="field">
                 <label for="money_income">Источник дохода</label>
-                <select name="money_income" type="text" id="money_income">
+                <select name="money_income" type="text" id="money_income" required>
                     <option value="" disabled selected></option>
                     <option value="пассивный доход">пассивный доход</option>
                     <option value="наёмный работник">наёмный работник</option>
@@ -49,11 +48,11 @@
             </div>
             <div class="field">
                 <label for="last_year_money">Доход за последний год [int], млн</label>
-                <input id="last_year_money" type="number" class="validate" />
+                <input id="last_year_money" type="number" required />
             </div>
             <div class="field">
                 <label for="rating">Кредитный рейтинг</label>
-                <select name="rating" type="number" id="rating">
+                <select name="rating" type="number" id="rating" required>
                     <option value="" disabled selected></option>
                     <option value="-2">-2</option>
                     <option value="-1">-1</option>
@@ -64,15 +63,15 @@
             </div>
             <div class="field">
                 <label for="credit">Запрошенная сумма [0.1 .. 10], млн</label>
-                <input id="credit" type="number" class="validate" />
+                <input id="credit" type="number" required step="0.1" />
             </div>
             <div class="field">
                 <label for="time">Срок погашения [1..20], лет</label>
-                <input id="time" type="number" class="validate" />
+                <input id="time" type="number" required min="1" max="20" />
             </div>
             <div class="field">
                 <label for="goal">Цель</label>
-                <select name="goal" type="number" id="goal">
+                <select name="goal" type="number" id="goal" required>
                     <option value="" disabled selected></option>
                     <option value="ипотека">ипотека</option>
                     <option value="развитие бизнеса">развитие бизнеса</option>
@@ -80,7 +79,7 @@
                     <option value="потребительский">потребительский</option>
                 </select>
             </div>
-            <button class="btn" type="button" name="action" id="send">
+            <button class="btn" type="submit" name="action" id="send">
                 Получить кредит
             </button>
         </form>
