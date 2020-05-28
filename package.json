@@ -1,7 +1,7 @@
 {
     "name": "credit_approver",
     "version": "1.0.0",
-    "description": "check, can you get a credit or not?",
+    "description": "Выдать кредит или нет? На вход передаются такие данные:",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,7 +17,6 @@
     },
     "homepage": "https://github.com/dzotovwork/credit_approver",
     "devDependencies": {
-        "typescript": "^3.9.3",
         "prettier": "^2.0.5"
     },
     "dependencies": {
