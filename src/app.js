@@ -1,9 +1,7 @@
 const btn = document.getElementById('send');
-
-btn.addEventListener('submit', () => {
-    console.log(`submit`);
-});
-btn.addEventListener('click', () => {
+const form = document.getElementById('form');
+form.addEventListener('submit', () => {
+    console.log('form submit');
     const data = {
         age: document.getElementById('age').value,
         sex: document.getElementById('sex').value,

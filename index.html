@@ -23,10 +23,10 @@
         <script defer src="src/app.js"></script>
     </head>
     <body>
-        <form class="form">
+        <form class="form" id="form">
             <div class="field">
                 <label for="age">Возраст [not negative int], лет</label>
-                <input id="age" type="number" required min="0"/>
+                <input id="age" name="age" type="number" required min="0" />
             </div>
             <div class="field">
                 <label for="sex">Пол</label>
@@ -63,7 +63,7 @@
             </div>
             <div class="field">
                 <label for="credit">Запрошенная сумма [0.1 .. 10], млн</label>
-                <input id="credit" type="number" required step="0.1" />
+                <input name="credit" id="credit" type="number" required min="0.1" max="10" step="0.1" />
             </div>
             <div class="field">
                 <label for="time">Срок погашения [1..20], лет</label>
