@@ -1,6 +1,10 @@
+import calc from './payment/calc';
+import checkConditions from './loanConditions /checkConditions';
 const btn = document.getElementById('send')!;
-btn.addEventListener('submit', () => {
-    const data = {
+
+btn.addEventListener('click', () => {
+    console.log('allooo');
+    const data: any = {
         // @ts-ignore
         age: Number(document.getElementById('age').value),
         // @ts-ignore
@@ -18,5 +22,14 @@ btn.addEventListener('submit', () => {
         // @ts-ignore
         goal: document.getElementById('goal').value,
     };
-    alert(JSON.stringify(data));
+    let result = 'Кредит выдаётся';
+    if (!checkConditions(data)) {
+        result = 'Кредит не выдаётся';
+    }
+    calc(data);
+    if (result === 'Кредит не выдаётся') {
+        console.log(JSON.stringify(result));
+    } else {
+        console.log(`Кредит выдаётся с условиями: ${calc(data)}`);
+    }
 });
