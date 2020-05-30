@@ -19,51 +19,68 @@ function checkMoneyIncome(data: dataType) {
 }
 
 /**
- * Условия изменения базовой ставки:
- * Все модификаторы процентной ставки суммируются, применяется итоговый модификатор;
- * 1. -2% для ипотеки, -0.5% для развития бизнеса, +1.5% для потребительского кредита;
- *    +1.5% для кредитного рейтинга -1, 0% для кредитного рейтинга 0,
- * 2. -0.25% для кредитного рейтинга 1, -0.75% для кредитного рейтинга 2;
- * 3. Модификатор в зависимости от запрошенной суммы рассчитывается по формуле [-log(sum)]; например,
- *    для 0.1 млн изменение ставки составит +1%, для 1 млн - 0%, для 10 млн изменение ставки составит -1%;
- * 4. Для пассивного дохода ставка повышается на 0.5%, для наемных работников ставка снижается на 0.25%,
- *    для заемщиков с собственным бизнесом ставка повышается на 0.25%;
+ * Расчет модификатора в зависимости от цели кредита
+ * -2% для ипотеки, -0.5% для развития бизнеса, +1.5% для потребительского кредита;
  * @param data
  */
-function getRate(data: dataType) {
-    let result = 10;
+function getGoalRate(data: dataType) {
     switch (data.goal) {
         case 'ипотека':
-            result = result - 2;
-            break;
+            return -2;
         case 'развитие бизнеса':
-            result = result - 0.5;
-            break;
+            return 0.5;
         case 'потребительский':
-            result = result + 1.5;
-            break;
+            return 1.5;
+        default:
+            return 0;
     }
+}
+
+/**
+ * Расчет модификатора в зависимости от кредитного рейтинга
+ * +1.5% для кредитного рейтинга -1, 0% для кредитного рейтинга 0,
+ * -0.25% для кредитного рейтинга 1, -0.75% для кредитного рейтинга 2
+ * @param data
+ */
+function getRatingRate(data: dataType): number {
     switch (data.rating) {
+        case -1:
+            return 1.5;
         case 1:
-            result = result - 0.25;
-            break;
+            return -0.25;
         case 2:
-            result = result - 0.25;
-            break;
+            return -0.75;
+        default:
+            return 0;
     }
+}
+
+/**
+ * Для пассивного дохода ставка повышается на 0.5%
+ * для наемных работников ставка снижается на 0.25%
+ * для заемщиков с собственным бизнесом ставка повышается на 0.25%
+ * @param data
+ */
+function getMoneyIncomeRate(data: dataType): number {
     switch (data.money_income) {
         case 'пассивный доход':
-            result = result + 0.5;
-            break;
+            return 0.5;
         case 'наёмный работник':
-            result = result - 0.25;
-            break;
+            return -0.25;
         case 'собственный бизнес':
-            result = result + 0.25;
-            break;
+            return 0.25;
+        default:
+            return 0;
     }
-    result = result - Math.log10(data.last_year_money);
-    return result;
+}
+
+/**
+ * Условия изменения базовой ставки:
+ * Все модификаторы процентной ставки суммируются, применяется итоговый модификатор
+ * @param data
+ */
+function getBaseRate(data: dataType) {
+    return getGoalRate(data) + getRatingRate(data) + getMoneyIncomeRate(data) - Math.log10(data.last_year_money);
 }
 
 /**
@@ -74,8 +91,7 @@ function getRate(data: dataType) {
  * @param data
  */
 function getPayment(data: dataType) {
-    const result = (data.credit * (1 + data.time * (10 + getRate(data)))) / data.time;
-    return 10;
+    return (data.credit * (1 + data.time * (10 + getBaseRate(data)))) / data.time;
 }
 
 /**
