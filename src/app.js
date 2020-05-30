@@ -1,7 +1,6 @@
 const btn = document.getElementById('send');
 
 btn.addEventListener('click', () => {
-    console.log('allooo');
     const data = {
         age: Number(document.getElementById('age').value),
         sex: document.getElementById('sex').value,
@@ -15,11 +14,9 @@ btn.addEventListener('click', () => {
     let result = 'Кредит выдаётся';
     if (!checkConditions(data)) {
         result = 'Кредит не выдаётся';
-    }
-    if (result === 'Кредит не выдаётся') {
-        console.log(JSON.stringify(result));
+        alert(result);
     } else {
-        console.log(`Кредит выдаётся с условиями: ${calc(data)}`);
+        alert(`${result} с годовым платежом: ${calc(data)} млн.`);
     }
 });
 const checkConditions = (data) => {
