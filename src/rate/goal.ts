@@ -1,4 +1,4 @@
-import { dataType } from '../dataType';
+import { data } from '../data';
 
 /**
  * Расчет модификатора в зависимости от цели кредита

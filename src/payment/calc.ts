@@ -1,4 +1,4 @@
-import { dataType } from '../dataType';
+import { data } from '../data';
 import rate from '../rate/rate';
 
 /**
@@ -8,6 +8,6 @@ import rate from '../rate/rate';
  * (<сумма кредита> * (1 + <срок погашения> * (<базовая ставка> + <модификаторы>))) / <срок погашения>
  * @param data
  */
-export default (data: dataType): number => {
+export default (data: data): number => {
     return (data.credit * (1 + data.time * (10 + rate(data)))) / data.time;
 };

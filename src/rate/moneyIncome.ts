@@ -1,4 +1,4 @@
-import { dataType } from '../dataType';
+import { data } from '../data';
 
 /**
  * Для пассивного дохода ставка повышается на 0.5%

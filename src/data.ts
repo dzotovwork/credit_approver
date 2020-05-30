@@ -1,4 +1,4 @@
-export type dataType = {
+export type data = {
     age: number;
     sex: 'F' | 'M';
     sourceOfIncome: 'пассивный доход' | 'наёмный работник' | 'собственный бизнес' | 'безработный';

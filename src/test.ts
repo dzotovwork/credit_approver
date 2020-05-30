@@ -1,7 +1,7 @@
-import { dataType } from './dataType';
+import { data } from './data';
 import checkConditions from './loanConditions /checkConditions';
 
-function checkData(data: dataType) {
+function checkData(data: data) {
     let result = 'Кредит выдаётся';
     if (!checkConditions(data)) {
         result = 'Кредит не выдаётся';
@@ -10,7 +10,7 @@ function checkData(data: dataType) {
 }
 console.log(
     checkData({
-        age: 59,
+        age: 63,
         sex: 'M',
         sourceOfIncome: 'пассивный доход',
         lastYearMoney: 100,

@@ -1,4 +1,4 @@
-import { dataType } from '../dataType';
+import { data } from '../data';
 import checkMoneyTime from './checkMoneyTime';
 import checkMoneyIncome from './checkMoneyIncome';
 import checkPayment from './checkPayment';
@@ -9,7 +9,7 @@ import checkRating from './checkRating';
  * Метод проверки, выдавать кредит или нет
  * @param data
  */
-export default (data: dataType): boolean => {
+export default (data: data): boolean => {
     return (
         checkRetirementAge(data.sex, data.age, data.time) &&
         checkMoneyTime(data.credit, data.time, data.lastYearMoney) &&
