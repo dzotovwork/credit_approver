@@ -4,26 +4,26 @@
  * @param data
  * @return {boolean}
  */
-export function checkRetirementAge(data: any) {
+export const checkRetirementAge = (data: any): boolean => {
     return data.sex === 'M' ? checkMale(data) : checkFemale(data);
-}
+};
 
 /**
  * Проверка мужчин
  * @param data
  * @return {boolean}
  */
-function checkMale(data: any) {
+const checkMale = (data: any) => {
     const retirementAge = 65;
     return data.age + data.time < retirementAge;
-}
+};
 
 /**
  * Проверка женщин
  * @param data
  * @return {boolean}
  */
-function checkFemale(data: any) {
+const checkFemale = (data: any): boolean => {
     const retirementAge = 60;
     return data.age + data.time < retirementAge;
-}
+};
