@@ -3,10 +3,10 @@ import { dataType } from '../dataType';
 /**
  * Расчет модификатора в зависимости от цели кредита
  * -2% для ипотеки, -0.5% для развития бизнеса, +1.5% для потребительского кредита;
- * @param data
+ * @param goal
  */
-export default (data: dataType): number => {
-    switch (data.goal) {
+export default (goal: 'ипотека' | 'развитие бизнеса' | 'автокредит' | 'потребительский'): number => {
+    switch (goal) {
         case 'ипотека':
             return -2;
         case 'развитие бизнеса':

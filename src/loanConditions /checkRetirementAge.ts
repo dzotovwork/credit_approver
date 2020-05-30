@@ -5,7 +5,7 @@
  * @param age - возраст заемщика
  * @param time - срок кредита
  */
-export const checkRetirementAge = (sex: 'M' | 'F', age: number, time: number): boolean => {
+export default (sex: 'M' | 'F', age: number, time: number): boolean => {
     return sex === 'M' ? __checkMale(age, time) : __checkFemale(age, time);
 };
 

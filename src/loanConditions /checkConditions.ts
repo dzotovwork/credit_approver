@@ -1,9 +1,9 @@
 import { dataType } from '../dataType';
-import { checkRetirementAge } from './checkRetirementAge';
-import { checkMoneyTime } from './checkMoneyTime';
-import { checkRating } from './checkRating';
-import { checkMoneyIncome } from './checkMoneyIncome';
-import { checkPayment } from './checkPayment';
+import checkMoneyTime from './checkMoneyTime';
+import checkMoneyIncome from './checkMoneyIncome';
+import checkPayment from './checkPayment';
+import checkRetirementAge from './checkRetirementAge';
+import checkRating from './checkRating';
 
 /**
  * Метод проверки, выдавать кредит или нет
@@ -12,7 +12,7 @@ import { checkPayment } from './checkPayment';
 export default (data: dataType): boolean => {
     return (
         checkRetirementAge(data.sex, data.age, data.time) &&
-        checkMoneyTime(data.credit, data.time, data.last_year_money) &&
+        checkMoneyTime(data.credit, data.time, data.lastYearMoney) &&
         checkRating(data.rating) &&
         checkMoneyIncome(data.sourceOfIncome) &&
         checkPayment(data)

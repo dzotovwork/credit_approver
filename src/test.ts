@@ -11,10 +11,10 @@ function checkData(data: dataType) {
 console.log(
     checkData({
         age: 59,
-        sex: 'M',
+        sex: 'F',
         sourceOfIncome: 'пассивный доход',
-        lastYearMoney: 1,
-        rating: -2,
+        lastYearMoney: 100,
+        rating: 2,
         credit: 1,
         time: 1,
         goal: 'ипотека',

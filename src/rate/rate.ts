@@ -9,5 +9,5 @@ import moneyIncome from './moneyIncome';
  * @param data
  */
 export default (data: dataType): number => {
-    return goal(data) + rating(data) + moneyIncome(data) - Math.log10(data.last_year_money);
+    return goal(data.goal) + rating(data.rating) + moneyIncome(data.sourceOfIncome) - Math.log10(data.lastYearMoney);
 };
