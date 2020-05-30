@@ -1,0 +1,35 @@
+body {
+    max-width: 50vw;
+}
+
+button {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.field {
+    text-align: right;
+    line-height: 30px;
+    background-color: rgb(167, 167, 170);
+}
+
+label {
+    float: left;
+    font-size: 16px;
+    background-color: rgb(167, 167, 170);
+    padding-right: 50px;
+}
+
+.main {
+    float: left;
+}
+
+input {
+    width: 150px;
+    padding: 1px 0px 1px 1px;
+}
+
+select {
+    width: 155px;
+    padding: 2px 0px 1px 1px;
+}

@@ -1,18 +1,22 @@
 const btn = document.getElementById('send')!;
-const form = document.getElementById('form')!;
-btn.addEventListener('click', () => {
+btn.addEventListener('submit', () => {
     const data = {
-        /*age: Number(form.age.value),
-        sex: form.sex.value,
-        money_income: form.money_income.value,
-        last_year_money: Number(form.last_year_money.value),
-        rating: Number(form.rating.value),
-        credit: Number(form.credit.value),
-        time: Number(form.time.value),
-        goal: form.goal.value,*/
+        // @ts-ignore
+        age: Number(document.getElementById('age').value),
+        // @ts-ignore
+        sex: document.getElementById('sex').value,
+        // @ts-ignore
+        money_income: document.getElementById('money_income').value,
+        // @ts-ignore
+        last_year_money: Number(document.getElementById('last_year_money').value),
+        // @ts-ignore
+        rating: Number(document.getElementById('rating').value),
+        // @ts-ignore
+        credit: Number(document.getElementById('credit').value),
+        // @ts-ignore
+        time: Number(document.getElementById('time').value),
+        // @ts-ignore
+        goal: document.getElementById('goal').value,
     };
-    console.log(`data ${JSON.stringify(data)}`);
-    let result;
-    // result = checkData(data);
-    console.log(result);
+    alert(JSON.stringify(data));
 });
