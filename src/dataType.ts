@@ -1,10 +1,10 @@
 export type dataType = {
     age: number;
-    sex: string;
-    money_income: string;
+    sex: 'F' | 'M';
+    money_income: 'пассивный доход' | 'наёмный работник' | 'собственный бизнес' | 'безработный';
     last_year_money: number;
-    rating: number;
+    rating: -2 | -1 | 0 | 1 | 2;
     credit: number;
     time: number;
-    goal: string;
+    goal: 'ипотека' | 'развитие бизнеса' | 'автокредит' | 'потребительский';
 };
