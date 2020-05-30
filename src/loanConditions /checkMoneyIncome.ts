@@ -1,9 +1,9 @@
-import { dataType } from '../dataType';
-
 /**
  * Если в источнике дохода указано "безработный" --> кредит не выдаётся
- * @param data
+ * @param sourceOfIncome
  */
-export const checkMoneyIncome = (data: dataType): boolean => {
-    return data.money_income === 'безработный';
+export const checkMoneyIncome = (
+    sourceOfIncome: 'пассивный доход' | 'наёмный работник' | 'собственный бизнес' | 'безработный'
+): boolean => {
+    return sourceOfIncome === 'безработный';
 };

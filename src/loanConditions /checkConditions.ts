@@ -14,7 +14,7 @@ export default (data: dataType): boolean => {
         checkRetirementAge(data.sex, data.age, data.time) &&
         checkMoneyTime(data.credit, data.time, data.last_year_money) &&
         checkRating(data.rating) &&
-        checkMoneyIncome(data) &&
+        checkMoneyIncome(data.sourceOfIncome) &&
         checkPayment(data)
     );
 };

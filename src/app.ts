@@ -1,37 +1,5 @@
 const btn = document.getElementById('send');
 const form = document.getElementById('form');
-
-function checkMale(data) {
-    const retirementAge = 65;
-    console.log(`Проверяем male age = ${data.age}, time = ${data.time}`);
-    if (data.age + data.time > retirementAge) {
-        return false;
-    }
-}
-function checkFemale(data) {
-    const retirementAge = 60;
-    console.log(`Проверяем female age = ${data.age}, time = ${data.time}`);
-    if (data.age + data.time > retirementAge) {
-        return false;
-    }
-}
-
-function checkRetirement(data) {
-    if (data.sex === 'M') {
-        return checkMale(data.age, data.time);
-    } else {
-        return checkFemale(data.age, data.time);
-    }
-}
-
-function checkData(data) {
-    let result = 'Кредит выдаётся';
-    if (!checkRetirement(data)) {
-        result = 'Кредит не выдаётся';
-    }
-    return result;
-}
-
 btn.addEventListener('click', () => {
     const data = {
         age: Number(form.age.value),

@@ -12,8 +12,8 @@ console.log(
     checkData({
         age: 59,
         sex: 'M',
-        money_income: 'пассивный доход',
-        last_year_money: 1,
+        sourceOfIncome: 'пассивный доход',
+        lastYearMoney: 1,
         rating: -2,
         credit: 1,
         time: 1,

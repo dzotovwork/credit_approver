@@ -7,5 +7,5 @@ import payment from '../payment/calc';
  */
 export const checkPayment = (data: dataType): boolean => {
     const yearPayment = payment(data); // метод для расчета платежа с процентами
-    return data.last_year_money / 2 < yearPayment;
+    return data.lastYearMoney / 2 < yearPayment;
 };
