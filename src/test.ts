@@ -1,5 +1,5 @@
 import { dataType } from './dataType';
-import { checkConditions } from './loanConditions /checkConditions';
+import checkConditions from './loanConditions /checkConditions';
 
 function checkData(data: dataType) {
     let result = 'Кредит выдаётся';
