@@ -5,5 +5,5 @@
 export default (
     sourceOfIncome: 'пассивный доход' | 'наёмный работник' | 'собственный бизнес' | 'безработный'
 ): boolean => {
-    return sourceOfIncome === 'безработный';
+    return sourceOfIncome !== 'безработный';
 };
