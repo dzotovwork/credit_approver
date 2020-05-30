@@ -11,7 +11,7 @@ function checkData(data: dataType) {
 console.log(
     checkData({
         age: 59,
-        sex: 'F',
+        sex: 'M',
         sourceOfIncome: 'пассивный доход',
         lastYearMoney: 100,
         rating: 2,

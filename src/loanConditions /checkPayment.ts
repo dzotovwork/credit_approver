@@ -6,6 +6,5 @@ import payment from '../payment/calc';
  * @param data
  */
 export default (data: dataType): boolean => {
-    const yearPayment = payment(data);
-    return data.lastYearMoney / 2 < yearPayment;
+    return data.lastYearMoney / 2 > payment(data);
 };
