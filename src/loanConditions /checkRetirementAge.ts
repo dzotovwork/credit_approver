@@ -1,29 +1,32 @@
 /**
  * Проверка возраста заемщика
  * Если возраст превышает пенсионный возраст на момент возврата кредита --> кредит не выдаётся
- * @param data
- * @return {boolean}
+ * @param sex - пол заемщика
+ * @param age - возраст заемщика
+ * @param time - срок кредита
  */
-export const checkRetirementAge = (data: any): boolean => {
-    return data.sex === 'M' ? checkMale(data) : checkFemale(data);
+export const checkRetirementAge = (sex: 'M' | 'F', age: number, time: number): boolean => {
+    return sex === 'M' ? __checkMale(age, time) : __checkFemale(age, time);
 };
 
 /**
  * Проверка мужчин
- * @param data
- * @return {boolean}
+ * @param age
+ * @param time
+ * @private
  */
-const checkMale = (data: any) => {
+const __checkMale = (age: number, time: number): boolean => {
     const retirementAge = 65;
-    return data.age + data.time < retirementAge;
+    return age + time < retirementAge;
 };
 
 /**
  * Проверка женщин
- * @param data
- * @return {boolean}
+ * @param age
+ * @param time
+ * @private
  */
-const checkFemale = (data: any): boolean => {
+const __checkFemale = (age: number, time: number): boolean => {
     const retirementAge = 60;
-    return data.age + data.time < retirementAge;
+    return age + time < retirementAge;
 };

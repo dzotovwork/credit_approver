@@ -11,7 +11,7 @@ import { checkPayment } from './checkPayment';
  */
 export default (data: dataType): boolean => {
     return (
-        checkRetirementAge(data) &&
+        checkRetirementAge(data.sex, data.age, data.time) &&
         checkMoneyTime(data) &&
         checkRating(data) &&
         checkMoneyIncome(data) &&
