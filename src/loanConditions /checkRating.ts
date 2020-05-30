@@ -2,8 +2,8 @@ import { dataType } from '../dataType';
 
 /**
  * Если кредитный рейтинг -2 --> кредит не выдаётся
- * @param data
+ * @param rating
  */
-export const checkRating = (data: dataType): boolean => {
-    return data.rating === -2;
+export const checkRating = (rating: -2 | -1 | 0 | 1 | 2): boolean => {
+    return rating !== -2;
 };
