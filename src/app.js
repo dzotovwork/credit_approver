@@ -25,9 +25,9 @@ btn.addEventListener('click', () => {
 const checkConditions = (data) => {
     return (
         checkRetirementAge(data.sex, data.age, data.time) &&
-        checkMoneyTime(data.credit, data.time, data.lastYearMoney) &&
+        checkMoneyTime(data.credit, data.time, data.last_year_money) &&
         checkRating(data.rating) &&
-        checkMoneyIncome(data.sourceOfIncome) &&
+        checkMoneyIncome(data.money_income) &&
         checkPayment(data)
     );
 };
@@ -53,7 +53,7 @@ const checkMoneyTime = (credit, time, money) => {
  * @param data
  */
 const checkPayment = (data) => {
-    return data.lastYearMoney / 2 > calc(data);
+    return data.last_year_money / 2 > calc(data);
 };
 /**
  * Если кредитный рейтинг -2 --> кредит не выдаётся
@@ -146,7 +146,7 @@ const moneyIncome = (sourceOfIncome) => {
  * @param data
  */
 const rate = (data) => {
-    return goal(data.goal) + rating(data.rating) + moneyIncome(data.sourceOfIncome) - Math.log10(data.lastYearMoney);
+    return goal(data.goal) + rating(data.rating) + moneyIncome(data.money_income) - Math.log10(data.last_year_money);
 };
 /**
  * Расчет модификатора в зависимости от кредитного рейтинга
