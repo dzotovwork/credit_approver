@@ -1,4 +1,5 @@
 import checkRetirementAge from './../checkRetirementAge.js';
+import checkMoneyTime from './../checkMoneyTime.js';
 describe('Валидация выдачи кредита', () => {
     beforeEach(() => {
         reporter.epic('Валидация выдачи кредита');
@@ -39,6 +40,24 @@ describe('Валидация выдачи кредита', () => {
                 expect(checkRetirementAge('F', 55, 6)).toBe(false);
                 reporter.endStep();
             });
+        });
+    });
+    describe('Валидация срока и суммы кредита', () => {
+        beforeEach(() => {
+            reporter.feature('Валидация срока и суммы кредита');
+            reporter.description(
+                'Если результат деления запрошенной суммы на срок погашения в годах более трети годового дохода --> кредит не выдаётся'
+            );
+        });
+        it('Запрошенная сумма 600000, срок 2 года, годовой доход 900000', async () => {
+            reporter.startStep(`checkMoneyTime(0.6, 2, 0.9)`);
+            expect(checkMoneyTime(0.6, 2, 0.9)).toBe(true);
+            reporter.endStep();
+        });
+        it('Запрошенная сумма 600001, срок 2 года, годовой доход 900000', async () => {
+            reporter.startStep(`checkMoneyTime(0.600001, 2, 0.9)`);
+            expect(checkMoneyTime(0.600001, 2, 0.9)).toBe(false);
+            reporter.endStep();
         });
     });
 });
