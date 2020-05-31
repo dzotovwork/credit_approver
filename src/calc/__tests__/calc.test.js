@@ -62,7 +62,7 @@ describe('Калькуляция кредита', () => {
             { rating: 2, result: 0.1975 },
             { rating: 1, result: 0.2025 },
             { rating: 0, result: 0.205 },
-            { rating: -1, result: 0.220 },
+            { rating: -1, result: 0.22 },
         ];
         beforeEach(() => {
             reporter.feature('В зависимости от кредитного рейтинга');
@@ -71,6 +71,28 @@ describe('Калькуляция кредита', () => {
             it(`Кредитный рейтинг заемщика: ${param.rating} млн`, async () => {
                 const cloneData = cloneDeep(data);
                 cloneData.rating = param.rating;
+                cloneData.money_income = 'пассивный доход';
+                reporter.startStep(`calc ${JSON.stringify(cloneData)}`);
+                reporter.addAttachment('Данные: ', JSON.stringify(cloneData), 'application/json');
+                expect(calc(cloneData)).toBe(param.result);
+                reporter.endStep();
+            });
+        });
+    });
+    describe('В зависимости от цели кредита', () => {
+        const params = [
+            { goal: 'автокредит', result: 0.205 },
+            { goal: 'потребительский', result: 0.22 },
+            { goal: 'развитие бизнеса', result: 0.2 },
+            { goal: 'ипотека', result: 0.185 },
+        ];
+        beforeEach(() => {
+            reporter.feature('В зависимости от цели кредита');
+        });
+        params.forEach((param) => {
+            it(`Цель кредита заемщика: ${param.goal} млн`, async () => {
+                const cloneData = cloneDeep(data);
+                cloneData.goal = param.goal;
                 cloneData.money_income = 'пассивный доход';
                 reporter.startStep(`calc ${JSON.stringify(cloneData)}`);
                 reporter.addAttachment('Данные: ', JSON.stringify(cloneData), 'application/json');
