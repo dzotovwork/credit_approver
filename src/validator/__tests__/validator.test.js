@@ -107,7 +107,7 @@ describe('Валидация выдачи кредита', () => {
                 age: 20,
                 sex: 'F',
                 money_income: 'пассивный доход',
-                last_year_money: 0.4,
+                last_year_money: 0.31,
                 rating: 0,
                 credit: 1,
                 time: 10,
@@ -117,12 +117,12 @@ describe('Валидация выдачи кредита', () => {
             expect(checkPayment(data)).toBe(true);
             reporter.endStep();
         });
-        it('Годовой платеж с процентами меньше половины дохода', async () => {
+        it('Годовой платеж с процентами больше половины дохода', async () => {
             const data = {
                 age: 20,
                 sex: 'F',
                 money_income: 'пассивный доход',
-                last_year_money: 0.399,
+                last_year_money: 0.309,
                 rating: 0,
                 credit: 1,
                 time: 10,
