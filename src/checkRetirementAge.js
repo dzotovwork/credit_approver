@@ -6,7 +6,6 @@
  * @param time - срок кредита
  */
 export default (sex, age, time) => {
-    console.log('hello from checkret')
     return sex === 'M' ? __checkMale(age, time) : __checkFemale(age, time);
 };
 

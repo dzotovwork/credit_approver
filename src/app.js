@@ -14,7 +14,6 @@ btn.addEventListener('click', () => {
         time: Number(document.getElementById('time').value),
         goal: document.getElementById('goal').value,
     };
-    console.log('hello from button');
     let result = 'Кредит выдаётся';
     if (!checkConditions(data)) {
         result = 'Кредит не выдаётся';
