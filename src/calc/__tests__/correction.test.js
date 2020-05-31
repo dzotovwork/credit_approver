@@ -39,5 +39,26 @@ describe('Расчет одобренной суммы кредита', () => {
                 });
             });
         });
+        describe('Рейтинг: 0', () => {
+            const params = [
+                { credit: 5.1, result: 0.977551 },
+                { credit: 5, result: 0.977551 },
+                { credit: 4.999, result: 0.97736 }
+            ];
+            const cloneData = cloneDeep(data);
+            cloneData.rating = 0;
+            beforeEach(() => {
+                reporter.story('Рейтинг: 0');
+            });
+            params.forEach((param) => {
+                it(`Для заемщика с рейтингом: 0 и запрашиваемой суммой: ${param.credit} млн`, async () => {
+                    cloneData.credit = param.credit;
+                    reporter.startStep(`calc ${JSON.stringify(cloneData)}`);
+                    reporter.addAttachment('Данные: ', JSON.stringify(cloneData), 'application/json');
+                    expect(calc(cloneData)).toBe(param.result);
+                    reporter.endStep();
+                });
+            });
+        });
     });
 });
