@@ -8,13 +8,9 @@ import correction from './correction.js';
  * (<сумма кредита> * (1 + <срок погашения> * (<базовая ставка> + <модификаторы>))) / <срок погашения>
  * @param data
  */
-
 export default (data) => {
     return (
-        Math.floor(
-            ((correction(data, data.credit) * (1 + data.time * (0.1 + rate(data, correction(data, data.credit))))) /
-                data.time) *
-                1000000
-        ) / 1000000
-    );
+        (correction(data, data.credit) * (1 + data.time * (0.1 + rate(data, correction(data, data.credit))))) /
+        data.time
+    ).toFixed(6);
 };
