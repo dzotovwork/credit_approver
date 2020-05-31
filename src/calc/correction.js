@@ -30,7 +30,8 @@ const getMaxCreditByRating = (data) => {
             return 1;
         case -0:
             return 5;
-        case 1 | 2:
+        case 1:
+        case 2:
             return 10;
     }
 };

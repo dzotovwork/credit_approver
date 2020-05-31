@@ -1,5 +1,5 @@
-import checkConditions from "./validator/checkConditions.js";
-import calc from "./calc/calc.js";
+import checkConditions from './validator/checkConditions.js';
+import calc from './calc/calc.js';
 
 const btn = document.getElementById('send');
 
@@ -15,6 +15,7 @@ btn.addEventListener('click', () => {
         goal: document.getElementById('goal').value,
     };
     let result = 'Кредит выдаётся';
+    console.log(JSON.stringify(data));
     if (!checkConditions(data)) {
         result = 'Кредит не выдаётся';
         alert(result);

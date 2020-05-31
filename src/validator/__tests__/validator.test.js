@@ -2,6 +2,7 @@ import checkRetirementAge from './../checkRetirementAge.js';
 import checkMoneyTime from './../checkMoneyTime.js';
 import checkRating from './../checkRating.js';
 import checkMoneyIncome from './../checkMoneyIncome.js';
+import checkPayment from './../checkPayment.js';
 describe('Валидация выдачи кредита', () => {
     beforeEach(() => {
         reporter.epic('Валидация выдачи кредита');
@@ -91,6 +92,44 @@ describe('Валидация выдачи кредита', () => {
         it('Источник дохода: !безработный', async () => {
             reporter.startStep(`checkMoneyIncome('наёмный работник')`);
             expect(checkMoneyIncome('наёмный работник')).toBe(true);
+            reporter.endStep();
+        });
+    });
+    describe('Валидация годового платежа и годового дохода', () => {
+        beforeEach(() => {
+            reporter.feature('Валидация годового платежа и годового дохода');
+            reporter.description(
+                'Если годовой платёж (включая проценты) больше половины дохода --> кредит не выдаётся'
+            );
+        });
+        it('Годовой платеж с процентами меньше половины дохода', async () => {
+            const data = {
+                age: 20,
+                sex: 'F',
+                money_income: 'пассивный доход',
+                last_year_money: 0.4,
+                rating: 0,
+                credit: 1,
+                time: 10,
+                goal: 'развитие бизнеса',
+            };
+            reporter.startStep(`checkPayment ${JSON.stringify(data)}`);
+            expect(checkPayment(data)).toBe(true);
+            reporter.endStep();
+        });
+        it('Годовой платеж с процентами меньше половины дохода', async () => {
+            const data = {
+                age: 20,
+                sex: 'F',
+                money_income: 'пассивный доход',
+                last_year_money: 0.399,
+                rating: 0,
+                credit: 1,
+                time: 10,
+                goal: 'развитие бизнеса',
+            };
+            reporter.startStep(`checkPayment ${JSON.stringify(data)}`);
+            expect(checkPayment(data)).toBe(false);
             reporter.endStep();
         });
     });
