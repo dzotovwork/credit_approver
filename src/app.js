@@ -1,4 +1,5 @@
 import checkConditions from "./checkConditions.js";
+import calc from "./calc.js";
 
 const btn = document.getElementById('send');
 
@@ -22,75 +23,3 @@ btn.addEventListener('click', () => {
         alert(`${result} с годовым платежом: ${calc(data)} млн.`);
     }
 });
-/**
- * метод расчета годового платежа
- * Базовая ставка - 10%
- * Годовой платеж по кредиту определяется по следующей формуле:
- * (<сумма кредита> * (1 + <срок погашения> * (<базовая ставка> + <модификаторы>))) / <срок погашения>
- * @param data
- */
-const calc = (data) => {
-    return (data.credit * (1 + data.time * (0.1 + rate(data)))) / data.time;
-};
-/**
- * Расчет модификатора в зависимости от цели кредита
- * -2% для ипотеки, -0.5% для развития бизнеса, +1.5% для потребительского кредита;
- * @param goal
- */
-const goal = (goal) => {
-    switch (goal) {
-        case 'ипотека':
-            return -2;
-        case 'развитие бизнеса':
-            return 0.5;
-        case 'потребительский':
-            return 1.5;
-        default:
-            return 0;
-    }
-};
-/**
- * Для пассивного дохода ставка повышается на 0.5%
- * для наемных работников ставка снижается на 0.25%
- * для заемщиков с собственным бизнесом ставка повышается на 0.25%
- * @param sourceOfIncome
- */
-const moneyIncome = (sourceOfIncome) => {
-    switch (sourceOfIncome) {
-        case 'пассивный доход':
-            return 0.5;
-        case 'наёмный работник':
-            return -0.25;
-        case 'собственный бизнес':
-            return 0.25;
-        default:
-            return 0;
-    }
-};
-
-/**
- * Условия изменения базовой ставки:
- * Все модификаторы процентной ставки суммируются, применяется итоговый модификатор
- * @param data
- */
-const rate = (data) => {
-    return goal(data.goal) + rating(data.rating) + moneyIncome(data.money_income) - Math.log10(data.last_year_money);
-};
-/**
- * Расчет модификатора в зависимости от кредитного рейтинга
- * +1.5% для кредитного рейтинга -1, 0% для кредитного рейтинга 0,
- * -0.25% для кредитного рейтинга 1, -0.75% для кредитного рейтинга 2
- * @param rating
- */
-const rating = (rating) => {
-    switch (rating) {
-        case -1:
-            return 1.5;
-        case 1:
-            return -0.25;
-        case 2:
-            return -0.75;
-        default:
-            return 0;
-    }
-};
