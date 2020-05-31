@@ -9,5 +9,5 @@ import rate from "./rate.js";
  */
 
 export default (data) => {
-    return ((data.credit * (Math.floor((1 + data.time * (0.1 + rate(data))) * 10000) / 10000)) / data.time) * 10;
+    return data.credit * (1 + data.time * (0.1 + rate(data))) / data.time;
 };
