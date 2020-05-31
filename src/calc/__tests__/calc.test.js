@@ -8,7 +8,7 @@ describe('Калькуляция кредита', () => {
         const data = {
             age: 20,
             sex: 'F',
-            money_income: '',
+            money_income: 'собственный бизнес',
             last_year_money: 10,
             rating: 0,
             credit: 1,
@@ -27,6 +27,7 @@ describe('Калькуляция кредита', () => {
             it(`Для заемщика с источником дохода: ${param.money_income}`, async () => {
                 data.money_income = param.money_income;
                 reporter.startStep(`calc ${JSON.stringify(data)}`);
+                reporter.addAttachment('Данные: ', JSON.stringify(data), 'application/json');
                 expect(calc(data)).toBe(param.result);
                 reporter.endStep();
             });
