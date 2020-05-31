@@ -1,5 +1,4 @@
-import checkRetirementAge from "./checkRetirementAge.js";
-import checkMoneyTime from "./checkMoneyTime.js";
+import checkConditions from "./checkConditions.js";
 
 const btn = document.getElementById('send');
 
@@ -23,21 +22,6 @@ btn.addEventListener('click', () => {
         alert(`${result} с годовым платежом: ${calc(data)} млн.`);
     }
 });
-/**
- * Если годовой платёж (включая проценты) больше половины дохода --> кредит не выдаётся
- * @param data
- */
-const checkPayment = (data) => {
-    return data.last_year_money / 2 > calc(data);
-};
-/**
- * Если кредитный рейтинг -2 --> кредит не выдаётся
- * @param rating
- */
-const checkRating = (rating) => {
-    return rating !== -2;
-};
-
 /**
  * метод расчета годового платежа
  * Базовая ставка - 10%
