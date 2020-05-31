@@ -67,6 +67,11 @@ describe('Валидация выдачи кредита', () => {
             expect(checkMoneyTime(0.6, 2, 0.9)).toBe(true);
             reporter.endStep();
         });
+        it('Запрошенная сумма 599999, срок 2 года, годовой доход 900000', async () => {
+            reporter.startStep(`checkMoneyTime(0.6, 2, 0.9)`);
+            expect(checkMoneyTime(0.599999, 2, 0.9)).toBe(true);
+            reporter.endStep();
+        });
         it('Запрошенная сумма 600001, срок 2 года, годовой доход 900000', async () => {
             reporter.startStep(`checkMoneyTime(0.600001, 2, 0.9)`);
             expect(checkMoneyTime(0.600001, 2, 0.9)).toBe(false);
