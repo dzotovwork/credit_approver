@@ -5,7 +5,7 @@ let data = {
     sex: 'F',
     money_income: 'собственный бизнес',
     last_year_money: 10,
-    rating: 1,
+    rating: 0,
     credit: 1,
     time: 10,
     goal: 'автокредит',
@@ -16,9 +16,9 @@ describe('Калькуляция кредита', () => {
     });
     describe('В зависимости от источника дохода', () => {
         const params = [
-            { money_income: 'собственный бизнес', result: 0.2 },
-            { money_income: 'наёмный работник', result: 0.195 },
-            { money_income: 'пассивный доход', result: 0.2025 },
+            { money_income: 'собственный бизнес', result: 0.2025 },
+            { money_income: 'наёмный работник', result: 0.1975 },
+            { money_income: 'пассивный доход', result: 0.205 },
         ];
         beforeEach(() => {
             reporter.feature('В зависимости от источника дохода');
@@ -36,8 +36,8 @@ describe('Калькуляция кредита', () => {
     });
     describe('В зависимости от суммы кредита', () => {
         const params = [
-            { credit: 10, result: 1.9 },
-            { credit: 5, result: 0.965051 },
+            { credit: 10, result: 1.85 },
+            { credit: 5, result: 0.940051 },
         ];
         beforeEach(() => {
             reporter.feature('В зависимости от суммы кредита');
@@ -46,6 +46,7 @@ describe('Калькуляция кредита', () => {
             it(`Запрашиваемая сумма кредита: ${param.credit} млн`, async () => {
                 const cloneData = cloneDeep(data);
                 cloneData.credit = param.credit;
+                cloneData.rating = 2;
                 reporter.startStep(`calc ${JSON.stringify(cloneData)}`);
                 reporter.addAttachment('Данные: ', JSON.stringify(cloneData), 'application/json');
                 expect(calc(cloneData)).toBe(param.result);
