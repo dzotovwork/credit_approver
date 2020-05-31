@@ -14,23 +14,20 @@ describe('Расчет одобренной суммы кредита', () => {
     beforeEach(() => {
         reporter.epic('Расчет одобренной суммы кредита');
     });
-    describe('В зависимости от источника жохода', () => {
+    describe('В зависимости от источника дохода', () => {
         beforeEach(() => {
-            reporter.feature('В зависимости от кредитного рейтинга');
+            reporter.feature('В зависимости от источника дохода');
         });
-        describe('Рейтинг: 2', () => {
-            const params = [
-                { credit: 10.1, result: 1.85 },
-                { credit: 10, result: 1.85 },
-                { credit: 9.9, result: 1.831932 },
-            ];
+        describe('Источник дохода: собственный бизнес', () => {
+            const params = [{ credit: 10.1, result: 1.9 }];
             const cloneData = cloneDeep(data);
-            cloneData.rating = 2;
+            cloneData.rating = 1;
+            cloneData.money_income = 'собственный бизнес';
             beforeEach(() => {
-                reporter.story('Рейтинг: 2');
+                reporter.story('Источник дохода: собственный бизнес');
             });
             params.forEach((param) => {
-                it(`Для заемщика с рейтингом: 2 и запрашиваемой суммой: ${param.credit} млн`, async () => {
+                it(`Для заемщика с источником дохода: собственный бизнес и запрашиваемой суммой: ${param.credit} млн`, async () => {
                     cloneData.credit = param.credit;
                     reporter.startStep(`calc ${JSON.stringify(cloneData)}`);
                     reporter.addAttachment('Данные: ', JSON.stringify(cloneData), 'application/json');
