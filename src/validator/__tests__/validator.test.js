@@ -117,12 +117,27 @@ describe('Валидация выдачи кредита', () => {
                 'Если годовой платёж (включая проценты) больше половины дохода --> кредит не выдаётся'
             );
         });
-        it('Годовой платеж с процентами меньше половины дохода', async () => {
+        it('Годовой платеж с процентами равен половине дохода', async () => {
             const data = {
                 age: 20,
                 sex: 'F',
                 money_income: 'пассивный доход',
                 last_year_money: 0.4,
+                rating: 0,
+                credit: 1,
+                time: 10,
+                goal: 'развитие бизнеса',
+            };
+            reporter.startStep(`checkPayment ${JSON.stringify(data)}`);
+            expect(checkPayment(data)).toBe(true);
+            reporter.endStep();
+        });
+        it('Годовой платеж с процентами меньше половины дохода', async () => {
+            const data = {
+                age: 20,
+                sex: 'F',
+                money_income: 'пассивный доход',
+                last_year_money: 0.400001,
                 rating: 0,
                 credit: 1,
                 time: 10,
