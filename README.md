@@ -39,7 +39,7 @@
 1. Кредит выдаётся/не выдаётся
 2. Годовой платеж по кредиту
 
-## ussage
+## usage
 **Установка:**
 1. Скачайте проект
 2. Установите зависимости использую команду `npm i`
@@ -48,3 +48,8 @@
 1. Находясь в корневой директории выполните команду `npm run test`
 2. Постройте отчет выполив команду `npm run report`
 Тестовая модель лежит тут 
+[модель.pdf](https://github.com/dzotovwork/credit_approver/blob/master/%D0%92%D1%8B%D0%B4%D0%B0%D1%87%D0%B0_%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82%D0%B0.pdf)
+[модель.xmind](https://github.com/dzotovwork/credit_approver/blob/master/%D0%92%D1%8B%D0%B4%D0%B0%D1%87%D0%B0_%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82%D0%B0.xmind)
+[модель allure](https://dzotovwork.github.io/credit_approver/allure-report/index.html#behaviors)
+сами тесты лежат в папках `__tests_`
+## [Главная страница](https://dzotovwork.github.io/credit_approver/)
