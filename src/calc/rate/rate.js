@@ -7,4 +7,5 @@ import moneyIncome from './moneyIncome.js';
  * Все модификаторы процентной ставки суммируются, применяется итоговый модификатор
  * @param data
  */
-export default (data) => goal(data.goal) + rating(data.rating) + moneyIncome(data.money_income) + -Math.log10(10) / 100;
+export default (data) =>
+    goal(data.goal) + rating(data.rating) + moneyIncome(data.money_income) + -Math.log10(data.credit) / 100;

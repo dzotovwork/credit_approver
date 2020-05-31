@@ -15,7 +15,7 @@ export default (sex, age, time) => (sex === 'M' ? __checkMale(age, time) : __che
  */
 const __checkMale = (age, time) => {
     const retirementAge = 65;
-    return age + time < retirementAge;
+    return age + time <= retirementAge;
 };
 
 /**
@@ -26,5 +26,5 @@ const __checkMale = (age, time) => {
  */
 const __checkFemale = (age, time) => {
     const retirementAge = 60;
-    return age + time < retirementAge;
+    return age + time <= retirementAge;
 };
