@@ -16,9 +16,9 @@ describe('Калькуляция кредита', () => {
     });
     describe('В зависимости от источника дохода', () => {
         const params = [
-            { money_income: 'собственный бизнес', result: 0.2025 },
-            { money_income: 'наёмный работник', result: 0.1975 },
-            { money_income: 'пассивный доход', result: 0.205 },
+            { money_income: 'собственный бизнес', result: 0.2 },
+            { money_income: 'наёмный работник', result: 0.195 },
+            { money_income: 'пассивный доход', result: 0.2025 },
         ];
         beforeEach(() => {
             reporter.feature('В зависимости от источника дохода');
@@ -36,8 +36,8 @@ describe('Калькуляция кредита', () => {
     });
     describe('В зависимости от суммы кредита', () => {
         const params = [
-            { credit: 10, result: 0.977551 },
-            { credit: 5, result: 0.977551 },
+            { credit: 10, result: 1.9 },
+            { credit: 5, result: 0.965051 },
         ];
         beforeEach(() => {
             reporter.feature('В зависимости от суммы кредита');
