@@ -5,6 +5,5 @@ import calc from './../calc/calc.js';
  * @param data
  */
 export default (data) => {
-    console.log(`calc = ${calc(data)}`);
     return data.last_year_money / 2 >= calc(data);
 };

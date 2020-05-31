@@ -27,6 +27,7 @@
         "prettier": "^2.0.5"
     },
     "dependencies": {
-        "gh-pages": "^2.2.0"
+        "gh-pages": "^2.2.0",
+        "lodash.clonedeep": "^4.5.0"
     }
 }

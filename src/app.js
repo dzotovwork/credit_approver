@@ -1,5 +1,6 @@
 import checkConditions from './validator/checkConditions.js';
 import calc from './calc/calc.js';
+import correction from './calc/correction.js';
 
 const btn = document.getElementById('send');
 
@@ -15,11 +16,15 @@ btn.addEventListener('click', () => {
         goal: document.getElementById('goal').value,
     };
     let result = 'Кредит выдаётся';
-    console.log(JSON.stringify(data));
     if (!checkConditions(data)) {
         result = 'Кредит не выдаётся';
         alert(result);
     } else {
-        alert(`${result} с годовым платежом: ${calc(data)} млн.`);
+        alert(
+            `${result} с годовым платежом: ${calc(data)} млн.\n Запрашивали: ${data.credit} , Одобрили: ${correction(
+                data,
+                data.credit
+            )}`
+        );
     }
 });
