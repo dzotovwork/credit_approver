@@ -1,4 +1,5 @@
-import rate from "./rate/rate.js";
+import rate from './rate/rate.js';
+import correction from './correction.js';
 
 /**
  * метод расчета годового платежа
@@ -9,5 +10,5 @@ import rate from "./rate/rate.js";
  */
 
 export default (data) => {
-    return data.credit * (1 + data.time * (0.1 + rate(data))) / data.time;
+    return (correction(data, data.credit) * (1 + data.time * (0.1 + rate(data)))) / data.time;
 };
