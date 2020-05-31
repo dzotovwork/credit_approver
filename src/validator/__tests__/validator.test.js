@@ -1,6 +1,7 @@
 import checkRetirementAge from './../checkRetirementAge.js';
 import checkMoneyTime from './../checkMoneyTime.js';
 import checkRating from './../checkRating.js';
+import checkMoneyIncome from './../checkMoneyIncome.js';
 describe('Валидация выдачи кредита', () => {
     beforeEach(() => {
         reporter.epic('Валидация выдачи кредита');
@@ -71,9 +72,25 @@ describe('Валидация выдачи кредита', () => {
             expect(checkRating(-2)).toBe(false);
             reporter.endStep();
         });
-        it('Кредитный рейтинг: -1', async () => {
+        it('Кредитный рейтинг: !-1', async () => {
             reporter.startStep(`checkRating(-1)`);
             expect(checkRating(-1)).toBe(true);
+            reporter.endStep();
+        });
+    });
+    describe('Валидация источника дохода', () => {
+        beforeEach(() => {
+            reporter.feature('Валидация источника дохода');
+            reporter.description('Если кредитный рейтинг -2 --> кредит не выдаётся');
+        });
+        it('Источник дохода: безработный', async () => {
+            reporter.startStep(`checkMoneyIncome('безработный')`);
+            expect(checkMoneyIncome('безработный')).toBe(false);
+            reporter.endStep();
+        });
+        it('Источник дохода: !безработный', async () => {
+            reporter.startStep(`checkMoneyIncome('наёмный работник')`);
+            expect(checkMoneyIncome('наёмный работник')).toBe(true);
             reporter.endStep();
         });
     });
