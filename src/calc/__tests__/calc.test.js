@@ -40,6 +40,7 @@ describe('Калькуляция кредита', () => {
             { credit: 5, result: 0.940051 },
             { credit: 1, result: 0.195 },
             { credit: 0.5, result: 0.099005 },
+            { credit: 0.1, result: 0.0205 },
         ];
         beforeEach(() => {
             reporter.feature('В зависимости от суммы кредита');
