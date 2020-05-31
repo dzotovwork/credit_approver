@@ -3,6 +3,7 @@ import calc from './calc/calc.js';
 import correction from './calc/correction.js';
 
 const btn = document.getElementById('send');
+const btnAllure = document.getElementById('allure');
 
 btn.addEventListener('click', () => {
     const data = {
@@ -27,4 +28,7 @@ btn.addEventListener('click', () => {
             )}`
         );
     }
+});
+btnAllure.addEventListener('click', () => {
+    window.open('./allure-report/index.html');
 });
