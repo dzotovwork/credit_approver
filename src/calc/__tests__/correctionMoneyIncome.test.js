@@ -40,5 +40,27 @@ describe('Расчет одобренной суммы кредита', () => {
                 });
             });
         });
+        describe('Источник дохода: наёмный работник', () => {
+            const params = [
+                { credit: 5.1, result: 0.915051 },
+                { credit: 5, result: 0.915051 },
+                { credit: 4.9, result: 0.89718 },
+            ];
+            const cloneData = cloneDeep(data);
+            cloneData.rating = 2;
+            cloneData.money_income = 'наёмный работник';
+            beforeEach(() => {
+                reporter.story('Источник дохода: наёмный работник');
+            });
+            params.forEach((param) => {
+                it(`Для заемщика с источником дохода: наёмный работник и запрашиваемой суммой: ${param.credit} млн`, async () => {
+                    cloneData.credit = param.credit;
+                    reporter.startStep(`calc ${JSON.stringify(cloneData)}`);
+                    reporter.addAttachment('Данные: ', JSON.stringify(cloneData), 'application/json');
+                    expect(calc(cloneData)).toBe(param.result);
+                    reporter.endStep();
+                });
+            });
+        });
     });
 });
