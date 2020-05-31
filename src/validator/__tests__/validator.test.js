@@ -23,6 +23,11 @@ describe('Валидация выдачи кредита', () => {
                 expect(checkRetirementAge('M', 60, 5)).toBe(true);
                 reporter.endStep();
             });
+            it('Возраст на момент возврата кредита < 65, кредит выдается', async () => {
+                reporter.startStep(`checkRetirementAge('M', 59, 5)`);
+                expect(checkRetirementAge('M', 60, 5)).toBe(true);
+                reporter.endStep();
+            });
             it('Возраст на момент возврата кредита = 66', async () => {
                 reporter.startStep(`checkRetirementAge('M', 60, 6)`);
                 expect(checkRetirementAge('M', 60, 6)).toBe(false);
@@ -36,6 +41,11 @@ describe('Валидация выдачи кредита', () => {
             it('Возраст на момент возврата кредита = 60, кредит выдается', async () => {
                 reporter.startStep(`checkRetirementAge('F', 55, 5)`);
                 expect(checkRetirementAge('F', 55, 5)).toBe(true);
+                reporter.endStep();
+            });
+            it('Возраст на момент возврата кредита < 60, кредит выдается', async () => {
+                reporter.startStep(`checkRetirementAge('F', 55, 5)`);
+                expect(checkRetirementAge('F', 54, 5)).toBe(true);
                 reporter.endStep();
             });
             it('Возраст на момент возврата кредита = 61, кредит не выдается', async () => {
