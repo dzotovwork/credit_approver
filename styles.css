@@ -24,12 +24,14 @@ label {
     float: left;
 }
 
-input {
+input:invalid {
     width: 150px;
     padding: 1px 0px 1px 1px;
+    border: 1px solid red;
 }
 
-select {
+select:invalid {
     width: 155px;
     padding: 2px 0px 1px 1px;
+    border: 1px solid red;
 }
