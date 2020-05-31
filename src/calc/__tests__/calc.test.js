@@ -58,7 +58,12 @@ describe('Калькуляция кредита', () => {
         });
     });
     describe('В зависимости от кредитного рейтинга', () => {
-        const params = [{ rating: 2, result: 0.1975 }];
+        const params = [
+            { rating: 2, result: 0.1975 },
+            { rating: 1, result: 0.2025 },
+            { rating: 0, result: 0.205 },
+            { rating: -1, result: 0.220 },
+        ];
         beforeEach(() => {
             reporter.feature('В зависимости от кредитного рейтинга');
         });
