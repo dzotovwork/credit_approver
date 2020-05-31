@@ -1,0 +1,501 @@
+[ {
+  "uid" : "7813bfe775f6793e",
+  "name" : "Для заемщика с источником дохода: собственный бизнес",
+  "time" : {
+    "start" : 1590950922865,
+    "stop" : 1590950922869,
+    "duration" : 4
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a4963e7aab00c654",
+  "name" : "Цель кредита заемщика: ипотека млн",
+  "time" : {
+    "start" : 1590950922891,
+    "stop" : 1590950922892,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ba9404c58ccbff4a",
+  "name" : "Цель кредита заемщика: автокредит млн",
+  "time" : {
+    "start" : 1590950922889,
+    "stop" : 1590950922890,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d1bd8e30c6fb248b",
+  "name" : "Для заемщика с источником дохода: наёмный работник и запрашиваемой суммой: 5 млн",
+  "time" : {
+    "start" : 1590950922443,
+    "stop" : 1590950922443,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b4f5f7540fc769ba",
+  "name" : "Для заемщика с источником дохода: пассивный доход и запрашиваемой суммой: 1.1 млн",
+  "time" : {
+    "start" : 1590950922446,
+    "stop" : 1590950922447,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9bc96be756e5a720",
+  "name" : "Запрашиваемая сумма кредита: 1 млн",
+  "time" : {
+    "start" : 1590950922878,
+    "stop" : 1590950922879,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "acd56e477a3a7a",
+  "name" : "Запрошенная сумма 600000, срок 2 года, годовой доход 900000",
+  "time" : {
+    "start" : 1590950922664,
+    "stop" : 1590950922664,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b6c3a4fd6860ad79",
+  "name" : "Годовой платеж с процентами меньше половины дохода",
+  "time" : {
+    "start" : 1590950922678,
+    "stop" : 1590950922678,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "858744d1b8dd80ad",
+  "name" : "Для заемщика с источником дохода: наёмный работник",
+  "time" : {
+    "start" : 1590950922869,
+    "stop" : 1590950922870,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "42ecac3cd528b6c",
+  "name" : "Возраст на момент возврата кредита = 65, кредит выдается",
+  "time" : {
+    "start" : 1590950922652,
+    "stop" : 1590950922654,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d8f9b66014eb17bb",
+  "name" : "Для заемщика с рейтингом: -1 и запрашиваемой суммой: 1.1 млн",
+  "time" : {
+    "start" : 1590950923126,
+    "stop" : 1590950923127,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6d69ea5bab459bb3",
+  "name" : "Годовой платеж с процентами равен половине дохода",
+  "time" : {
+    "start" : 1590950922677,
+    "stop" : 1590950922678,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1fe349c481b2f65e",
+  "name" : "Для заемщика с источником дохода: собственный бизнес и запрашиваемой суммой: 10.1 млн",
+  "time" : {
+    "start" : 1590950922426,
+    "stop" : 1590950922431,
+    "duration" : 5
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "88a84fe845f87e49",
+  "name" : "Для заемщика с рейтингом: 2 и запрашиваемой суммой: 10.1 млн",
+  "time" : {
+    "start" : 1590950923106,
+    "stop" : 1590950923111,
+    "duration" : 5
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9e37de09236d49f5",
+  "name" : "Возраст на момент возврата кредита < 60, кредит выдается",
+  "time" : {
+    "start" : 1590950922661,
+    "stop" : 1590950922662,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "827f99a4fb87be1c",
+  "name" : "Для заемщика с источником дохода: пассивный доход и запрашиваемой суммой: 0.99999 млн",
+  "time" : {
+    "start" : 1590950922447,
+    "stop" : 1590950922448,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c32ddbc064cc4b8a",
+  "name" : "Кредитный рейтинг: -2",
+  "time" : {
+    "start" : 1590950922673,
+    "stop" : 1590950922673,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "71e0395b353fbb15",
+  "name" : "Для заемщика с рейтингом: 0 и запрашиваемой суммой: 5 млн",
+  "time" : {
+    "start" : 1590950923121,
+    "stop" : 1590950923121,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6d17ba0df5aebb14",
+  "name" : "Для заемщика с источником дохода: пассивный доход",
+  "time" : {
+    "start" : 1590950922870,
+    "stop" : 1590950922870,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f9f2b6a67c72141d",
+  "name" : "Для заемщика с рейтингом: 0 и запрашиваемой суммой: 5.1 млн",
+  "time" : {
+    "start" : 1590950923119,
+    "stop" : 1590950923120,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "210a5c71dcc9829b",
+  "name" : "Кредитный рейтинг заемщика: -1 млн",
+  "time" : {
+    "start" : 1590950922885,
+    "stop" : 1590950922885,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f9661373cfc9dcc4",
+  "name" : "Для заемщика с рейтингом: 2 и запрашиваемой суммой: 10 млн",
+  "time" : {
+    "start" : 1590950923111,
+    "stop" : 1590950923112,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a4d17059e38fdb25",
+  "name" : "Для заемщика с источником дохода: собственный бизнес и запрашиваемой суммой: 10 млн",
+  "time" : {
+    "start" : 1590950922431,
+    "stop" : 1590950922431,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7a55177f57d40819",
+  "name" : "Источник дохода: !безработный",
+  "time" : {
+    "start" : 1590950922675,
+    "stop" : 1590950922676,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f62c75a5db4144df",
+  "name" : "Возраст на момент возврата кредита = 66",
+  "time" : {
+    "start" : 1590950922655,
+    "stop" : 1590950922655,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8542bd1c2c104b59",
+  "name" : "Запрошенная сумма 600001, срок 2 года, годовой доход 900000",
+  "time" : {
+    "start" : 1590950922665,
+    "stop" : 1590950922671,
+    "duration" : 6
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bae4490b64887ee",
+  "name" : "Годовой платеж с процентами больше половины дохода",
+  "time" : {
+    "start" : 1590950922678,
+    "stop" : 1590950922678,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4e463125addea66f",
+  "name" : "Запрашиваемая сумма кредита: 0.1 млн",
+  "time" : {
+    "start" : 1590950922879,
+    "stop" : 1590950922880,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "568058525e51b441",
+  "name" : "Источник дохода: безработный",
+  "time" : {
+    "start" : 1590950922675,
+    "stop" : 1590950922675,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c116b583bb9ac921",
+  "name" : "Для заемщика с источником дохода: наёмный работник и запрашиваемой суммой: 4.9 млн",
+  "time" : {
+    "start" : 1590950922443,
+    "stop" : 1590950922444,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1e56b175082a0666",
+  "name" : "Для заемщика с рейтингом: 2 и запрашиваемой суммой: 9.9 млн",
+  "time" : {
+    "start" : 1590950923112,
+    "stop" : 1590950923113,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "63b522eb3947ed4c",
+  "name" : "Цель кредита заемщика: потребительский млн",
+  "time" : {
+    "start" : 1590950922890,
+    "stop" : 1590950922890,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1f0387c84d3f29cd",
+  "name" : "Запрошенная сумма 599999, срок 2 года, годовой доход 900000",
+  "time" : {
+    "start" : 1590950922664,
+    "stop" : 1590950922665,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d46660f4fd4af52f",
+  "name" : "Для заемщика с источником дохода: собственный бизнес и запрашиваемой суммой: 9.99999 млн",
+  "time" : {
+    "start" : 1590950922431,
+    "stop" : 1590950922432,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "31acd6436cb1658a",
+  "name" : "Кредитный рейтинг заемщика: 1 млн",
+  "time" : {
+    "start" : 1590950922884,
+    "stop" : 1590950922884,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "259a2d066b4fe44f",
+  "name" : "Для заемщика с рейтингом: -1 и запрашиваемой суммой: 0.99999 млн",
+  "time" : {
+    "start" : 1590950923128,
+    "stop" : 1590950923128,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2d4a18d3d57e0cd4",
+  "name" : "Для заемщика с источником дохода: наёмный работник и запрашиваемой суммой: 5.1 млн",
+  "time" : {
+    "start" : 1590950922442,
+    "stop" : 1590950922443,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1ca26d9fa042d0b6",
+  "name" : "Возраст на момент возврата кредита = 60, кредит выдается",
+  "time" : {
+    "start" : 1590950922661,
+    "stop" : 1590950922661,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "514d42e989f23b5c",
+  "name" : "Возраст на момент возврата кредита = 61, кредит не выдается",
+  "time" : {
+    "start" : 1590950922662,
+    "stop" : 1590950922662,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "27c3aa242c5d2dbf",
+  "name" : "Для заемщика с источником дохода: пассивный доход и запрашиваемой суммой: 1 млн",
+  "time" : {
+    "start" : 1590950922447,
+    "stop" : 1590950922447,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "583ec4c6f351f48c",
+  "name" : "Запрашиваемая сумма кредита: 5 млн",
+  "time" : {
+    "start" : 1590950922877,
+    "stop" : 1590950922878,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b143a815e1194ffe",
+  "name" : "Кредитный рейтинг заемщика: 2 млн",
+  "time" : {
+    "start" : 1590950922883,
+    "stop" : 1590950922884,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a704e30eebfaec0a",
+  "name" : "Для заемщика с рейтингом: -1 и запрашиваемой суммой: 1 млн",
+  "time" : {
+    "start" : 1590950923127,
+    "stop" : 1590950923128,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b60ed159839c37ce",
+  "name" : "Возраст на момент возврата кредита < 65, кредит выдается",
+  "time" : {
+    "start" : 1590950922654,
+    "stop" : 1590950922655,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ae43ee5f459a69e6",
+  "name" : "Кредитный рейтинг заемщика: 0 млн",
+  "time" : {
+    "start" : 1590950922884,
+    "stop" : 1590950922885,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "95114bc16cfefabd",
+  "name" : "Кредитный рейтинг: !-1",
+  "time" : {
+    "start" : 1590950922673,
+    "stop" : 1590950922674,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "46ee667680cf447a",
+  "name" : "Запрашиваемая сумма кредита: 0.5 млн",
+  "time" : {
+    "start" : 1590950922879,
+    "stop" : 1590950922879,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7254776be941684e",
+  "name" : "Запрашиваемая сумма кредита: 10 млн",
+  "time" : {
+    "start" : 1590950922877,
+    "stop" : 1590950922877,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "67b03e46c780f7b",
+  "name" : "Цель кредита заемщика: развитие бизнеса млн",
+  "time" : {
+    "start" : 1590950922890,
+    "stop" : 1590950922891,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d05f95c9a966df7d",
+  "name" : "Для заемщика с рейтингом: 0 и запрашиваемой суммой: 4.999 млн",
+  "time" : {
+    "start" : 1590950923121,
+    "stop" : 1590950923122,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

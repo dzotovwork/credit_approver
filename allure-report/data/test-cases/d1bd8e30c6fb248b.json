@@ -1,0 +1,85 @@
+{
+  "uid" : "d1bd8e30c6fb248b",
+  "name" : "Для заемщика с источником дохода: наёмный работник и запрашиваемой суммой: 5 млн",
+  "fullName" : "Расчет одобренной суммы кредита В зависимости от источника дохода Источник дохода: наёмный работник.Для заемщика с источником дохода: наёмный работник и запрашиваемой суммой: 5 млн",
+  "historyId" : "6011859bef27778f60b806dbaa6777a6",
+  "time" : {
+    "start" : 1590950922443,
+    "stop" : 1590950922443,
+    "duration" : 0
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "calc {\"age\":20,\"sex\":\"M\",\"money_income\":\"наёмный работник\",\"last_year_money\":10,\"rating\":2,\"credit\":5,\"time\":10,\"goal\":\"автокредит\"}",
+      "time" : {
+        "start" : 1590950922443,
+        "stop" : 1590950922443,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "55fc4d6d51ffa4ac",
+        "name" : "Данные: ",
+        "source" : "55fc4d6d51ffa4ac.json",
+        "type" : "application/json",
+        "size" : 152
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Расчет одобренной суммы кредита"
+  }, {
+    "name" : "feature",
+    "value" : "В зависимости от источника дохода"
+  }, {
+    "name" : "story",
+    "value" : "Источник дохода: наёмный работник"
+  }, {
+    "name" : "suite",
+    "value" : "Расчет одобренной суммы кредита В зависимости от источника дохода Источник дохода: наёмный работник"
+  }, {
+    "name" : "testClass",
+    "value" : "Расчет одобренной суммы кредита В зависимости от источника дохода Источник дохода: наёмный работник"
+  }, {
+    "name" : "testMethod",
+    "value" : "Для заемщика с источником дохода: наёмный работник и запрашиваемой суммой: 5 млн"
+  }, {
+    "name" : "package",
+    "value" : "Расчет одобренной суммы кредита В зависимости от источника дохода Источник дохода: наёмный работник"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d1bd8e30c6fb248b.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,107 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1590950922876' stop='1590950922880'>
+    <name>Калькуляция кредита В зависимости от суммы кредита</name>
+    <title>Калькуляция кредита В зависимости от суммы кредита</title>
+    <test-cases>
+        <test-case start='1590950922877' status='passed' stop='1590950922877'>
+            <name>Запрашиваемая сумма кредита: 10 млн</name>
+            <title>Запрашиваемая сумма кредита: 10 млн</title>
+            <labels>
+                <label name='epic' value='Калькуляция кредита'/>
+                <label name='feature' value='В зависимости от суммы кредита'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1590950922877' status='passed' stop='1590950922877'>
+                    <name>calc {"age":20,"sex":"F","money_income":"собственный бизнес","last_year_money":10,"rating":2,"credit":10,"time":10,"goal":"автокредит"}</name>
+                    <title>calc {"age":20,"sex":"F","money_income":"собственный бизнес","last_year_money":10,"rating":2,"credit":10,"time":10,"goal":"автокредит"}</title>
+                    <attachments>
+                        <attachment title='Данные: ' source='f79d4503-499b-403b-bc65-6450261e1cfe-attachment.json' type='application/json' size='130'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1590950922877' status='passed' stop='1590950922878'>
+            <name>Запрашиваемая сумма кредита: 5 млн</name>
+            <title>Запрашиваемая сумма кредита: 5 млн</title>
+            <labels>
+                <label name='epic' value='Калькуляция кредита'/>
+                <label name='feature' value='В зависимости от суммы кредита'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1590950922877' status='passed' stop='1590950922878'>
+                    <name>calc {"age":20,"sex":"F","money_income":"собственный бизнес","last_year_money":10,"rating":2,"credit":5,"time":10,"goal":"автокредит"}</name>
+                    <title>calc {"age":20,"sex":"F","money_income":"собственный бизнес","last_year_money":10,"rating":2,"credit":5,"time":10,"goal":"автокредит"}</title>
+                    <attachments>
+                        <attachment title='Данные: ' source='0b8be0d8-c64d-4d4c-b13e-1fd0316623b7-attachment.json' type='application/json' size='129'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1590950922878' status='passed' stop='1590950922879'>
+            <name>Запрашиваемая сумма кредита: 1 млн</name>
+            <title>Запрашиваемая сумма кредита: 1 млн</title>
+            <labels>
+                <label name='epic' value='Калькуляция кредита'/>
+                <label name='feature' value='В зависимости от суммы кредита'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1590950922878' status='passed' stop='1590950922878'>
+                    <name>calc {"age":20,"sex":"F","money_income":"собственный бизнес","last_year_money":10,"rating":2,"credit":1,"time":10,"goal":"автокредит"}</name>
+                    <title>calc {"age":20,"sex":"F","money_income":"собственный бизнес","last_year_money":10,"rating":2,"credit":1,"time":10,"goal":"автокредит"}</title>
+                    <attachments>
+                        <attachment title='Данные: ' source='0f348b08-e37d-408e-a862-aa7b8e3e66e2-attachment.json' type='application/json' size='129'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1590950922879' status='passed' stop='1590950922879'>
+            <name>Запрашиваемая сумма кредита: 0.5 млн</name>
+            <title>Запрашиваемая сумма кредита: 0.5 млн</title>
+            <labels>
+                <label name='epic' value='Калькуляция кредита'/>
+                <label name='feature' value='В зависимости от суммы кредита'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1590950922879' status='passed' stop='1590950922879'>
+                    <name>calc {"age":20,"sex":"F","money_income":"собственный бизнес","last_year_money":10,"rating":2,"credit":0.5,"time":10,"goal":"автокредит"}</name>
+                    <title>calc {"age":20,"sex":"F","money_income":"собственный бизнес","last_year_money":10,"rating":2,"credit":0.5,"time":10,"goal":"автокредит"}</title>
+                    <attachments>
+                        <attachment title='Данные: ' source='d6c350ea-ea5a-4709-bcfe-2ebf0263685a-attachment.json' type='application/json' size='131'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1590950922879' status='passed' stop='1590950922880'>
+            <name>Запрашиваемая сумма кредита: 0.1 млн</name>
+            <title>Запрашиваемая сумма кредита: 0.1 млн</title>
+            <labels>
+                <label name='epic' value='Калькуляция кредита'/>
+                <label name='feature' value='В зависимости от суммы кредита'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1590950922879' status='passed' stop='1590950922880'>
+                    <name>calc {"age":20,"sex":"F","money_income":"собственный бизнес","last_year_money":10,"rating":2,"credit":0.1,"time":10,"goal":"автокредит"}</name>
+                    <title>calc {"age":20,"sex":"F","money_income":"собственный бизнес","last_year_money":10,"rating":2,"credit":0.1,"time":10,"goal":"автокредит"}</title>
+                    <attachments>
+                        <attachment title='Данные: ' source='cc3bea26-1fef-42b9-ad58-6ad181ddd51c-attachment.json' type='application/json' size='131'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

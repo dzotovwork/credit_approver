@@ -1,0 +1,87 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1590950922883' stop='1590950922885'>
+    <name>Калькуляция кредита В зависимости от кредитного рейтинга</name>
+    <title>Калькуляция кредита В зависимости от кредитного рейтинга</title>
+    <test-cases>
+        <test-case start='1590950922883' status='passed' stop='1590950922884'>
+            <name>Кредитный рейтинг заемщика: 2 млн</name>
+            <title>Кредитный рейтинг заемщика: 2 млн</title>
+            <labels>
+                <label name='epic' value='Калькуляция кредита'/>
+                <label name='feature' value='В зависимости от кредитного рейтинга'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1590950922883' status='passed' stop='1590950922884'>
+                    <name>calc {"age":20,"sex":"F","money_income":"пассивный доход","last_year_money":10,"rating":2,"credit":1,"time":10,"goal":"автокредит"}</name>
+                    <title>calc {"age":20,"sex":"F","money_income":"пассивный доход","last_year_money":10,"rating":2,"credit":1,"time":10,"goal":"автокредит"}</title>
+                    <attachments>
+                        <attachment title='Данные: ' source='6cfbe11c-490a-455d-a020-619adb1a748a-attachment.json' type='application/json' size='126'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1590950922884' status='passed' stop='1590950922884'>
+            <name>Кредитный рейтинг заемщика: 1 млн</name>
+            <title>Кредитный рейтинг заемщика: 1 млн</title>
+            <labels>
+                <label name='epic' value='Калькуляция кредита'/>
+                <label name='feature' value='В зависимости от кредитного рейтинга'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1590950922884' status='passed' stop='1590950922884'>
+                    <name>calc {"age":20,"sex":"F","money_income":"пассивный доход","last_year_money":10,"rating":1,"credit":1,"time":10,"goal":"автокредит"}</name>
+                    <title>calc {"age":20,"sex":"F","money_income":"пассивный доход","last_year_money":10,"rating":1,"credit":1,"time":10,"goal":"автокредит"}</title>
+                    <attachments>
+                        <attachment title='Данные: ' source='4e1fb622-a019-4417-9cac-767111699d28-attachment.json' type='application/json' size='126'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1590950922884' status='passed' stop='1590950922885'>
+            <name>Кредитный рейтинг заемщика: 0 млн</name>
+            <title>Кредитный рейтинг заемщика: 0 млн</title>
+            <labels>
+                <label name='epic' value='Калькуляция кредита'/>
+                <label name='feature' value='В зависимости от кредитного рейтинга'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1590950922884' status='passed' stop='1590950922885'>
+                    <name>calc {"age":20,"sex":"F","money_income":"пассивный доход","last_year_money":10,"rating":0,"credit":1,"time":10,"goal":"автокредит"}</name>
+                    <title>calc {"age":20,"sex":"F","money_income":"пассивный доход","last_year_money":10,"rating":0,"credit":1,"time":10,"goal":"автокредит"}</title>
+                    <attachments>
+                        <attachment title='Данные: ' source='92977f54-2966-4f96-8580-459ec0a3889e-attachment.json' type='application/json' size='126'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1590950922885' status='passed' stop='1590950922885'>
+            <name>Кредитный рейтинг заемщика: -1 млн</name>
+            <title>Кредитный рейтинг заемщика: -1 млн</title>
+            <labels>
+                <label name='epic' value='Калькуляция кредита'/>
+                <label name='feature' value='В зависимости от кредитного рейтинга'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1590950922885' status='passed' stop='1590950922885'>
+                    <name>calc {"age":20,"sex":"F","money_income":"пассивный доход","last_year_money":10,"rating":-1,"credit":1,"time":10,"goal":"автокредит"}</name>
+                    <title>calc {"age":20,"sex":"F","money_income":"пассивный доход","last_year_money":10,"rating":-1,"credit":1,"time":10,"goal":"автокредит"}</title>
+                    <attachments>
+                        <attachment title='Данные: ' source='07bf31b2-a994-4f50-beca-9536da4d880c-attachment.json' type='application/json' size='127'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,76 @@
+{
+  "uid" : "7a55177f57d40819",
+  "name" : "Источник дохода: !безработный",
+  "fullName" : "Валидация выдачи кредита Валидация источника дохода.Источник дохода: !безработный",
+  "historyId" : "18b20469589df34c6e185eff0de6e91b",
+  "time" : {
+    "start" : 1590950922675,
+    "stop" : 1590950922676,
+    "duration" : 1
+  },
+  "description" : "Если кредитный рейтинг -2 --> кредит не выдаётся",
+  "descriptionHtml" : "<p>Если кредитный рейтинг -2 --&gt; кредит не выдаётся</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "checkMoneyIncome('наёмный работник')",
+      "time" : {
+        "start" : 1590950922675,
+        "stop" : 1590950922676,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Валидация выдачи кредита"
+  }, {
+    "name" : "feature",
+    "value" : "Валидация источника дохода"
+  }, {
+    "name" : "suite",
+    "value" : "Валидация выдачи кредита Валидация источника дохода"
+  }, {
+    "name" : "testClass",
+    "value" : "Валидация выдачи кредита Валидация источника дохода"
+  }, {
+    "name" : "testMethod",
+    "value" : "Источник дохода: !безработный"
+  }, {
+    "name" : "package",
+    "value" : "Валидация выдачи кредита Валидация источника дохода"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7a55177f57d40819.json",
+  "parameterValues" : [ ]
+}

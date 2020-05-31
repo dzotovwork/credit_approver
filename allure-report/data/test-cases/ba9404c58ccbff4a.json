@@ -1,0 +1,82 @@
+{
+  "uid" : "ba9404c58ccbff4a",
+  "name" : "Цель кредита заемщика: автокредит млн",
+  "fullName" : "Калькуляция кредита В зависимости от цели кредита.Цель кредита заемщика: автокредит млн",
+  "historyId" : "791485c8db001949c0b659b777679ab9",
+  "time" : {
+    "start" : 1590950922889,
+    "stop" : 1590950922890,
+    "duration" : 1
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "calc {\"age\":20,\"sex\":\"F\",\"money_income\":\"пассивный доход\",\"last_year_money\":10,\"rating\":0,\"credit\":1,\"time\":10,\"goal\":\"автокредит\"}",
+      "time" : {
+        "start" : 1590950922889,
+        "stop" : 1590950922890,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "42045faefcd729f6",
+        "name" : "Данные: ",
+        "source" : "42045faefcd729f6.json",
+        "type" : "application/json",
+        "size" : 150
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Калькуляция кредита"
+  }, {
+    "name" : "feature",
+    "value" : "В зависимости от цели кредита"
+  }, {
+    "name" : "suite",
+    "value" : "Калькуляция кредита В зависимости от цели кредита"
+  }, {
+    "name" : "testClass",
+    "value" : "Калькуляция кредита В зависимости от цели кредита"
+  }, {
+    "name" : "testMethod",
+    "value" : "Цель кредита заемщика: автокредит млн"
+  }, {
+    "name" : "package",
+    "value" : "Калькуляция кредита В зависимости от цели кредита"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ba9404c58ccbff4a.json",
+  "parameterValues" : [ ]
+}

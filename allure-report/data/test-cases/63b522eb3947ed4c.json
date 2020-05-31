@@ -1,0 +1,82 @@
+{
+  "uid" : "63b522eb3947ed4c",
+  "name" : "Цель кредита заемщика: потребительский млн",
+  "fullName" : "Калькуляция кредита В зависимости от цели кредита.Цель кредита заемщика: потребительский млн",
+  "historyId" : "34d9a83db134367f4ff10ae66f70d549",
+  "time" : {
+    "start" : 1590950922890,
+    "stop" : 1590950922890,
+    "duration" : 0
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "calc {\"age\":20,\"sex\":\"F\",\"money_income\":\"пассивный доход\",\"last_year_money\":10,\"rating\":0,\"credit\":1,\"time\":10,\"goal\":\"потребительский\"}",
+      "time" : {
+        "start" : 1590950922890,
+        "stop" : 1590950922890,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "6c8b10929962a446",
+        "name" : "Данные: ",
+        "source" : "6c8b10929962a446.json",
+        "type" : "application/json",
+        "size" : 160
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Калькуляция кредита"
+  }, {
+    "name" : "feature",
+    "value" : "В зависимости от цели кредита"
+  }, {
+    "name" : "suite",
+    "value" : "Калькуляция кредита В зависимости от цели кредита"
+  }, {
+    "name" : "testClass",
+    "value" : "Калькуляция кредита В зависимости от цели кредита"
+  }, {
+    "name" : "testMethod",
+    "value" : "Цель кредита заемщика: потребительский млн"
+  }, {
+    "name" : "package",
+    "value" : "Калькуляция кредита В зависимости от цели кредита"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "63b522eb3947ed4c.json",
+  "parameterValues" : [ ]
+}

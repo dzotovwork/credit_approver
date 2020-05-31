@@ -1,0 +1,70 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1590950923119' stop='1590950923122'>
+    <name>Расчет одобренной суммы кредита В зависимости от кредитного рейтинга Рейтинг: 0</name>
+    <title>Расчет одобренной суммы кредита В зависимости от кредитного рейтинга Рейтинг: 0</title>
+    <test-cases>
+        <test-case start='1590950923119' status='passed' stop='1590950923120'>
+            <name>Для заемщика с рейтингом: 0 и запрашиваемой суммой: 5.1 млн</name>
+            <title>Для заемщика с рейтингом: 0 и запрашиваемой суммой: 5.1 млн</title>
+            <labels>
+                <label name='epic' value='Расчет одобренной суммы кредита'/>
+                <label name='feature' value='В зависимости от кредитного рейтинга'/>
+                <label name='story' value='Рейтинг: 0'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1590950923119' status='passed' stop='1590950923120'>
+                    <name>calc {"age":20,"sex":"M","money_income":"собственный бизнес","last_year_money":10,"rating":0,"credit":5.1,"time":10,"goal":"автокредит"}</name>
+                    <title>calc {"age":20,"sex":"M","money_income":"собственный бизнес","last_year_money":10,"rating":0,"credit":5.1,"time":10,"goal":"автокредит"}</title>
+                    <attachments>
+                        <attachment title='Данные: ' source='deb88e21-8449-48d6-a66e-86d202d794f3-attachment.json' type='application/json' size='131'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1590950923121' status='passed' stop='1590950923121'>
+            <name>Для заемщика с рейтингом: 0 и запрашиваемой суммой: 5 млн</name>
+            <title>Для заемщика с рейтингом: 0 и запрашиваемой суммой: 5 млн</title>
+            <labels>
+                <label name='epic' value='Расчет одобренной суммы кредита'/>
+                <label name='feature' value='В зависимости от кредитного рейтинга'/>
+                <label name='story' value='Рейтинг: 0'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1590950923121' status='passed' stop='1590950923121'>
+                    <name>calc {"age":20,"sex":"M","money_income":"собственный бизнес","last_year_money":10,"rating":0,"credit":5,"time":10,"goal":"автокредит"}</name>
+                    <title>calc {"age":20,"sex":"M","money_income":"собственный бизнес","last_year_money":10,"rating":0,"credit":5,"time":10,"goal":"автокредит"}</title>
+                    <attachments>
+                        <attachment title='Данные: ' source='729f0a5f-eabc-4b1d-9365-1b83a486cb74-attachment.json' type='application/json' size='129'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1590950923121' status='passed' stop='1590950923122'>
+            <name>Для заемщика с рейтингом: 0 и запрашиваемой суммой: 4.999 млн</name>
+            <title>Для заемщика с рейтингом: 0 и запрашиваемой суммой: 4.999 млн</title>
+            <labels>
+                <label name='epic' value='Расчет одобренной суммы кредита'/>
+                <label name='feature' value='В зависимости от кредитного рейтинга'/>
+                <label name='story' value='Рейтинг: 0'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1590950923121' status='passed' stop='1590950923122'>
+                    <name>calc {"age":20,"sex":"M","money_income":"собственный бизнес","last_year_money":10,"rating":0,"credit":4.999,"time":10,"goal":"автокредит"}</name>
+                    <title>calc {"age":20,"sex":"M","money_income":"собственный бизнес","last_year_money":10,"rating":0,"credit":4.999,"time":10,"goal":"автокредит"}</title>
+                    <attachments>
+                        <attachment title='Данные: ' source='351cb2c4-e500-4d73-a8c9-3883592aa56e-attachment.json' type='application/json' size='133'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

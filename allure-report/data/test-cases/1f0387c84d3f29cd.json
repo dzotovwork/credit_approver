@@ -1,0 +1,76 @@
+{
+  "uid" : "1f0387c84d3f29cd",
+  "name" : "Запрошенная сумма 599999, срок 2 года, годовой доход 900000",
+  "fullName" : "Валидация выдачи кредита Валидация срока и суммы кредита.Запрошенная сумма 599999, срок 2 года, годовой доход 900000",
+  "historyId" : "3c1b7483dc0c32545b51f0b695a71594",
+  "time" : {
+    "start" : 1590950922664,
+    "stop" : 1590950922665,
+    "duration" : 1
+  },
+  "description" : "Если результат деления запрошенной суммы на срок погашения в годах более трети годового дохода --> кредит не выдаётся",
+  "descriptionHtml" : "<p>Если результат деления запрошенной суммы на срок погашения в годах более трети годового дохода --&gt; кредит не выдаётся</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "checkMoneyTime(0.6, 2, 0.9)",
+      "time" : {
+        "start" : 1590950922665,
+        "stop" : 1590950922665,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Валидация выдачи кредита"
+  }, {
+    "name" : "feature",
+    "value" : "Валидация срока и суммы кредита"
+  }, {
+    "name" : "suite",
+    "value" : "Валидация выдачи кредита Валидация срока и суммы кредита"
+  }, {
+    "name" : "testClass",
+    "value" : "Валидация выдачи кредита Валидация срока и суммы кредита"
+  }, {
+    "name" : "testMethod",
+    "value" : "Запрошенная сумма 599999, срок 2 года, годовой доход 900000"
+  }, {
+    "name" : "package",
+    "value" : "Валидация выдачи кредита Валидация срока и суммы кредита"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1f0387c84d3f29cd.json",
+  "parameterValues" : [ ]
+}

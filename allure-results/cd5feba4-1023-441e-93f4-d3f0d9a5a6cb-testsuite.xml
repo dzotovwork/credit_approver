@@ -1,0 +1,70 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1590950922446' stop='1590950922448'>
+    <name>Расчет одобренной суммы кредита В зависимости от источника дохода Источник дохода: пассивный доход</name>
+    <title>Расчет одобренной суммы кредита В зависимости от источника дохода Источник дохода: пассивный доход</title>
+    <test-cases>
+        <test-case start='1590950922446' status='passed' stop='1590950922447'>
+            <name>Для заемщика с источником дохода: пассивный доход и запрашиваемой суммой: 1.1 млн</name>
+            <title>Для заемщика с источником дохода: пассивный доход и запрашиваемой суммой: 1.1 млн</title>
+            <labels>
+                <label name='epic' value='Расчет одобренной суммы кредита'/>
+                <label name='feature' value='В зависимости от источника дохода'/>
+                <label name='story' value='Источник дохода: пассивный доход'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1590950922446' status='passed' stop='1590950922447'>
+                    <name>calc {"age":20,"sex":"M","money_income":"пассивный доход","last_year_money":10,"rating":0,"credit":1.1,"time":10,"goal":"автокредит"}</name>
+                    <title>calc {"age":20,"sex":"M","money_income":"пассивный доход","last_year_money":10,"rating":0,"credit":1.1,"time":10,"goal":"автокредит"}</title>
+                    <attachments>
+                        <attachment title='Данные: ' source='07a79af7-9096-43af-b725-18b9d8c4dfbc-attachment.json' type='application/json' size='128'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1590950922447' status='passed' stop='1590950922447'>
+            <name>Для заемщика с источником дохода: пассивный доход и запрашиваемой суммой: 1 млн</name>
+            <title>Для заемщика с источником дохода: пассивный доход и запрашиваемой суммой: 1 млн</title>
+            <labels>
+                <label name='epic' value='Расчет одобренной суммы кредита'/>
+                <label name='feature' value='В зависимости от источника дохода'/>
+                <label name='story' value='Источник дохода: пассивный доход'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1590950922447' status='passed' stop='1590950922447'>
+                    <name>calc {"age":20,"sex":"M","money_income":"пассивный доход","last_year_money":10,"rating":0,"credit":1,"time":10,"goal":"автокредит"}</name>
+                    <title>calc {"age":20,"sex":"M","money_income":"пассивный доход","last_year_money":10,"rating":0,"credit":1,"time":10,"goal":"автокредит"}</title>
+                    <attachments>
+                        <attachment title='Данные: ' source='30dff88a-b783-47a0-828d-917e1df00824-attachment.json' type='application/json' size='126'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1590950922447' status='passed' stop='1590950922448'>
+            <name>Для заемщика с источником дохода: пассивный доход и запрашиваемой суммой: 0.99999 млн</name>
+            <title>Для заемщика с источником дохода: пассивный доход и запрашиваемой суммой: 0.99999 млн</title>
+            <labels>
+                <label name='epic' value='Расчет одобренной суммы кредита'/>
+                <label name='feature' value='В зависимости от источника дохода'/>
+                <label name='story' value='Источник дохода: пассивный доход'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1590950922448' status='passed' stop='1590950922448'>
+                    <name>calc {"age":20,"sex":"M","money_income":"пассивный доход","last_year_money":10,"rating":0,"credit":0.99999,"time":10,"goal":"автокредит"}</name>
+                    <title>calc {"age":20,"sex":"M","money_income":"пассивный доход","last_year_money":10,"rating":0,"credit":0.99999,"time":10,"goal":"автокредит"}</title>
+                    <attachments>
+                        <attachment title='Данные: ' source='f8894cc4-99de-4d1c-b507-e9029480d628-attachment.json' type='application/json' size='132'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

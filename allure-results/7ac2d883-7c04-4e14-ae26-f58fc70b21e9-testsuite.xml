@@ -1,0 +1,70 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1590950922442' stop='1590950922444'>
+    <name>Расчет одобренной суммы кредита В зависимости от источника дохода Источник дохода: наёмный работник</name>
+    <title>Расчет одобренной суммы кредита В зависимости от источника дохода Источник дохода: наёмный работник</title>
+    <test-cases>
+        <test-case start='1590950922442' status='passed' stop='1590950922443'>
+            <name>Для заемщика с источником дохода: наёмный работник и запрашиваемой суммой: 5.1 млн</name>
+            <title>Для заемщика с источником дохода: наёмный работник и запрашиваемой суммой: 5.1 млн</title>
+            <labels>
+                <label name='epic' value='Расчет одобренной суммы кредита'/>
+                <label name='feature' value='В зависимости от источника дохода'/>
+                <label name='story' value='Источник дохода: наёмный работник'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1590950922442' status='passed' stop='1590950922443'>
+                    <name>calc {"age":20,"sex":"M","money_income":"наёмный работник","last_year_money":10,"rating":2,"credit":5.1,"time":10,"goal":"автокредит"}</name>
+                    <title>calc {"age":20,"sex":"M","money_income":"наёмный работник","last_year_money":10,"rating":2,"credit":5.1,"time":10,"goal":"автокредит"}</title>
+                    <attachments>
+                        <attachment title='Данные: ' source='2c5f2517-3c3f-451a-bb25-e8608fb24637-attachment.json' type='application/json' size='129'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1590950922443' status='passed' stop='1590950922443'>
+            <name>Для заемщика с источником дохода: наёмный работник и запрашиваемой суммой: 5 млн</name>
+            <title>Для заемщика с источником дохода: наёмный работник и запрашиваемой суммой: 5 млн</title>
+            <labels>
+                <label name='epic' value='Расчет одобренной суммы кредита'/>
+                <label name='feature' value='В зависимости от источника дохода'/>
+                <label name='story' value='Источник дохода: наёмный работник'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1590950922443' status='passed' stop='1590950922443'>
+                    <name>calc {"age":20,"sex":"M","money_income":"наёмный работник","last_year_money":10,"rating":2,"credit":5,"time":10,"goal":"автокредит"}</name>
+                    <title>calc {"age":20,"sex":"M","money_income":"наёмный работник","last_year_money":10,"rating":2,"credit":5,"time":10,"goal":"автокредит"}</title>
+                    <attachments>
+                        <attachment title='Данные: ' source='0da9964e-069d-4522-bad1-ba63d06779d7-attachment.json' type='application/json' size='127'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1590950922443' status='passed' stop='1590950922444'>
+            <name>Для заемщика с источником дохода: наёмный работник и запрашиваемой суммой: 4.9 млн</name>
+            <title>Для заемщика с источником дохода: наёмный работник и запрашиваемой суммой: 4.9 млн</title>
+            <labels>
+                <label name='epic' value='Расчет одобренной суммы кредита'/>
+                <label name='feature' value='В зависимости от источника дохода'/>
+                <label name='story' value='Источник дохода: наёмный работник'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1590950922443' status='passed' stop='1590950922444'>
+                    <name>calc {"age":20,"sex":"M","money_income":"наёмный работник","last_year_money":10,"rating":2,"credit":4.9,"time":10,"goal":"автокредит"}</name>
+                    <title>calc {"age":20,"sex":"M","money_income":"наёмный работник","last_year_money":10,"rating":2,"credit":4.9,"time":10,"goal":"автокредит"}</title>
+                    <attachments>
+                        <attachment title='Данные: ' source='55a36a78-d839-4efa-8c38-72875364df5d-attachment.json' type='application/json' size='129'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

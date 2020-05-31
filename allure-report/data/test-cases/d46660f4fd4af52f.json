@@ -1,0 +1,85 @@
+{
+  "uid" : "d46660f4fd4af52f",
+  "name" : "Для заемщика с источником дохода: собственный бизнес и запрашиваемой суммой: 9.99999 млн",
+  "fullName" : "Расчет одобренной суммы кредита В зависимости от источника дохода Источник дохода: собственный бизнес.Для заемщика с источником дохода: собственный бизнес и запрашиваемой суммой: 9.99999 млн",
+  "historyId" : "d9c1920b4d04c039c104c8a4a37e49a8",
+  "time" : {
+    "start" : 1590950922431,
+    "stop" : 1590950922432,
+    "duration" : 1
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "calc {\"age\":20,\"sex\":\"M\",\"money_income\":\"собственный бизнес\",\"last_year_money\":10,\"rating\":1,\"credit\":9.99999,\"time\":10,\"goal\":\"автокредит\"}",
+      "time" : {
+        "start" : 1590950922431,
+        "stop" : 1590950922432,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "13d7d78a4589504b",
+        "name" : "Данные: ",
+        "source" : "13d7d78a4589504b.json",
+        "type" : "application/json",
+        "size" : 162
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Расчет одобренной суммы кредита"
+  }, {
+    "name" : "feature",
+    "value" : "В зависимости от источника дохода"
+  }, {
+    "name" : "story",
+    "value" : "Источник дохода: собственный бизнес"
+  }, {
+    "name" : "suite",
+    "value" : "Расчет одобренной суммы кредита В зависимости от источника дохода Источник дохода: собственный бизнес"
+  }, {
+    "name" : "testClass",
+    "value" : "Расчет одобренной суммы кредита В зависимости от источника дохода Источник дохода: собственный бизнес"
+  }, {
+    "name" : "testMethod",
+    "value" : "Для заемщика с источником дохода: собственный бизнес и запрашиваемой суммой: 9.99999 млн"
+  }, {
+    "name" : "package",
+    "value" : "Расчет одобренной суммы кредита В зависимости от источника дохода Источник дохода: собственный бизнес"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d46660f4fd4af52f.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,87 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1590950922889' stop='1590950922892'>
+    <name>Калькуляция кредита В зависимости от цели кредита</name>
+    <title>Калькуляция кредита В зависимости от цели кредита</title>
+    <test-cases>
+        <test-case start='1590950922889' status='passed' stop='1590950922890'>
+            <name>Цель кредита заемщика: автокредит млн</name>
+            <title>Цель кредита заемщика: автокредит млн</title>
+            <labels>
+                <label name='epic' value='Калькуляция кредита'/>
+                <label name='feature' value='В зависимости от цели кредита'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1590950922889' status='passed' stop='1590950922890'>
+                    <name>calc {"age":20,"sex":"F","money_income":"пассивный доход","last_year_money":10,"rating":0,"credit":1,"time":10,"goal":"автокредит"}</name>
+                    <title>calc {"age":20,"sex":"F","money_income":"пассивный доход","last_year_money":10,"rating":0,"credit":1,"time":10,"goal":"автокредит"}</title>
+                    <attachments>
+                        <attachment title='Данные: ' source='8b07248f-7633-45fe-afc2-25289cf66053-attachment.json' type='application/json' size='126'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1590950922890' status='passed' stop='1590950922890'>
+            <name>Цель кредита заемщика: потребительский млн</name>
+            <title>Цель кредита заемщика: потребительский млн</title>
+            <labels>
+                <label name='epic' value='Калькуляция кредита'/>
+                <label name='feature' value='В зависимости от цели кредита'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1590950922890' status='passed' stop='1590950922890'>
+                    <name>calc {"age":20,"sex":"F","money_income":"пассивный доход","last_year_money":10,"rating":0,"credit":1,"time":10,"goal":"потребительский"}</name>
+                    <title>calc {"age":20,"sex":"F","money_income":"пассивный доход","last_year_money":10,"rating":0,"credit":1,"time":10,"goal":"потребительский"}</title>
+                    <attachments>
+                        <attachment title='Данные: ' source='395035f8-de67-4af5-a37d-3fff94fc980a-attachment.json' type='application/json' size='131'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1590950922890' status='passed' stop='1590950922891'>
+            <name>Цель кредита заемщика: развитие бизнеса млн</name>
+            <title>Цель кредита заемщика: развитие бизнеса млн</title>
+            <labels>
+                <label name='epic' value='Калькуляция кредита'/>
+                <label name='feature' value='В зависимости от цели кредита'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1590950922891' status='passed' stop='1590950922891'>
+                    <name>calc {"age":20,"sex":"F","money_income":"пассивный доход","last_year_money":10,"rating":0,"credit":1,"time":10,"goal":"развитие бизнеса"}</name>
+                    <title>calc {"age":20,"sex":"F","money_income":"пассивный доход","last_year_money":10,"rating":0,"credit":1,"time":10,"goal":"развитие бизнеса"}</title>
+                    <attachments>
+                        <attachment title='Данные: ' source='bee15547-dae6-40e3-ae9b-4df40917d589-attachment.json' type='application/json' size='132'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1590950922891' status='passed' stop='1590950922892'>
+            <name>Цель кредита заемщика: ипотека млн</name>
+            <title>Цель кредита заемщика: ипотека млн</title>
+            <labels>
+                <label name='epic' value='Калькуляция кредита'/>
+                <label name='feature' value='В зависимости от цели кредита'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1590950922891' status='passed' stop='1590950922892'>
+                    <name>calc {"age":20,"sex":"F","money_income":"пассивный доход","last_year_money":10,"rating":0,"credit":1,"time":10,"goal":"ипотека"}</name>
+                    <title>calc {"age":20,"sex":"F","money_income":"пассивный доход","last_year_money":10,"rating":0,"credit":1,"time":10,"goal":"ипотека"}</title>
+                    <attachments>
+                        <attachment title='Данные: ' source='3de9f8c7-58a2-4791-a0c1-6630bcc6b82d-attachment.json' type='application/json' size='123'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

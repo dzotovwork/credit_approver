@@ -1,0 +1,85 @@
+{
+  "uid" : "f9f2b6a67c72141d",
+  "name" : "Для заемщика с рейтингом: 0 и запрашиваемой суммой: 5.1 млн",
+  "fullName" : "Расчет одобренной суммы кредита В зависимости от кредитного рейтинга Рейтинг: 0.Для заемщика с рейтингом: 0 и запрашиваемой суммой: 5.1 млн",
+  "historyId" : "e66c45c315d1589deda9d93855211fc6",
+  "time" : {
+    "start" : 1590950923119,
+    "stop" : 1590950923120,
+    "duration" : 1
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "calc {\"age\":20,\"sex\":\"M\",\"money_income\":\"собственный бизнес\",\"last_year_money\":10,\"rating\":0,\"credit\":5.1,\"time\":10,\"goal\":\"автокредит\"}",
+      "time" : {
+        "start" : 1590950923119,
+        "stop" : 1590950923120,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "f25ecd00f18a8c0e",
+        "name" : "Данные: ",
+        "source" : "f25ecd00f18a8c0e.json",
+        "type" : "application/json",
+        "size" : 158
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Расчет одобренной суммы кредита"
+  }, {
+    "name" : "feature",
+    "value" : "В зависимости от кредитного рейтинга"
+  }, {
+    "name" : "story",
+    "value" : "Рейтинг: 0"
+  }, {
+    "name" : "suite",
+    "value" : "Расчет одобренной суммы кредита В зависимости от кредитного рейтинга Рейтинг: 0"
+  }, {
+    "name" : "testClass",
+    "value" : "Расчет одобренной суммы кредита В зависимости от кредитного рейтинга Рейтинг: 0"
+  }, {
+    "name" : "testMethod",
+    "value" : "Для заемщика с рейтингом: 0 и запрашиваемой суммой: 5.1 млн"
+  }, {
+    "name" : "package",
+    "value" : "Расчет одобренной суммы кредита В зависимости от кредитного рейтинга Рейтинг: 0"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f9f2b6a67c72141d.json",
+  "parameterValues" : [ ]
+}

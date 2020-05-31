@@ -1,0 +1,76 @@
+{
+  "uid" : "6d69ea5bab459bb3",
+  "name" : "Годовой платеж с процентами равен половине дохода",
+  "fullName" : "Валидация выдачи кредита Валидация годового платежа и годового дохода.Годовой платеж с процентами равен половине дохода",
+  "historyId" : "f7d9fd42e36b9daffb78741bfe83408f",
+  "time" : {
+    "start" : 1590950922677,
+    "stop" : 1590950922678,
+    "duration" : 1
+  },
+  "description" : "Если годовой платёж (включая проценты) больше половины дохода --> кредит не выдаётся",
+  "descriptionHtml" : "<p>Если годовой платёж (включая проценты) больше половины дохода --&gt; кредит не выдаётся</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "checkPayment {\"age\":20,\"sex\":\"F\",\"money_income\":\"пассивный доход\",\"last_year_money\":0.4,\"rating\":0,\"credit\":1,\"time\":10,\"goal\":\"развитие бизнеса\"}",
+      "time" : {
+        "start" : 1590950922677,
+        "stop" : 1590950922678,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Валидация выдачи кредита"
+  }, {
+    "name" : "feature",
+    "value" : "Валидация годового платежа и годового дохода"
+  }, {
+    "name" : "suite",
+    "value" : "Валидация выдачи кредита Валидация годового платежа и годового дохода"
+  }, {
+    "name" : "testClass",
+    "value" : "Валидация выдачи кредита Валидация годового платежа и годового дохода"
+  }, {
+    "name" : "testMethod",
+    "value" : "Годовой платеж с процентами равен половине дохода"
+  }, {
+    "name" : "package",
+    "value" : "Валидация выдачи кредита Валидация годового платежа и годового дохода"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6d69ea5bab459bb3.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,82 @@
+{
+  "uid" : "a4963e7aab00c654",
+  "name" : "Цель кредита заемщика: ипотека млн",
+  "fullName" : "Калькуляция кредита В зависимости от цели кредита.Цель кредита заемщика: ипотека млн",
+  "historyId" : "a5a970eb1a944317cdb36f20c4e09de8",
+  "time" : {
+    "start" : 1590950922891,
+    "stop" : 1590950922892,
+    "duration" : 1
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "calc {\"age\":20,\"sex\":\"F\",\"money_income\":\"пассивный доход\",\"last_year_money\":10,\"rating\":0,\"credit\":1,\"time\":10,\"goal\":\"ипотека\"}",
+      "time" : {
+        "start" : 1590950922891,
+        "stop" : 1590950922892,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "1b8a70e0c94473e7",
+        "name" : "Данные: ",
+        "source" : "1b8a70e0c94473e7.json",
+        "type" : "application/json",
+        "size" : 144
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Калькуляция кредита"
+  }, {
+    "name" : "feature",
+    "value" : "В зависимости от цели кредита"
+  }, {
+    "name" : "suite",
+    "value" : "Калькуляция кредита В зависимости от цели кредита"
+  }, {
+    "name" : "testClass",
+    "value" : "Калькуляция кредита В зависимости от цели кредита"
+  }, {
+    "name" : "testMethod",
+    "value" : "Цель кредита заемщика: ипотека млн"
+  }, {
+    "name" : "package",
+    "value" : "Калькуляция кредита В зависимости от цели кредита"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a4963e7aab00c654.json",
+  "parameterValues" : [ ]
+}

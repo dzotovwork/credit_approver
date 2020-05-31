@@ -1,0 +1,67 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1590950922652' stop='1590950922655'>
+    <name>Валидация выдачи кредита Проверка возраста Мужчины</name>
+    <title>Валидация выдачи кредита Проверка возраста Мужчины</title>
+    <test-cases>
+        <test-case start='1590950922652' status='passed' stop='1590950922654'>
+            <name>Возраст на момент возврата кредита = 65, кредит выдается</name>
+            <title>Возраст на момент возврата кредита = 65, кредит выдается</title>
+            <labels>
+                <label name='epic' value='Валидация выдачи кредита'/>
+                <label name='feature' value='Проверка возраста'/>
+                <label name='story' value='Мужчины'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1590950922653' status='passed' stop='1590950922654'>
+                    <name>checkRetirementAge('M', 60, 5)</name>
+                    <title>checkRetirementAge('M', 60, 5)</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <description type='text'>Если возраст превышает пенсионный возраст на момент возврата кредита --> кредит не выдаётся</description>
+        </test-case>
+        <test-case start='1590950922654' status='passed' stop='1590950922655'>
+            <name>Возраст на момент возврата кредита &lt; 65, кредит выдается</name>
+            <title>Возраст на момент возврата кредита &lt; 65, кредит выдается</title>
+            <labels>
+                <label name='epic' value='Валидация выдачи кредита'/>
+                <label name='feature' value='Проверка возраста'/>
+                <label name='story' value='Мужчины'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1590950922654' status='passed' stop='1590950922654'>
+                    <name>checkRetirementAge('M', 59, 5)</name>
+                    <title>checkRetirementAge('M', 59, 5)</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <description type='text'>Если возраст превышает пенсионный возраст на момент возврата кредита --> кредит не выдаётся</description>
+        </test-case>
+        <test-case start='1590950922655' status='passed' stop='1590950922655'>
+            <name>Возраст на момент возврата кредита = 66</name>
+            <title>Возраст на момент возврата кредита = 66</title>
+            <labels>
+                <label name='epic' value='Валидация выдачи кредита'/>
+                <label name='feature' value='Проверка возраста'/>
+                <label name='story' value='Мужчины'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1590950922655' status='passed' stop='1590950922655'>
+                    <name>checkRetirementAge('M', 60, 6)</name>
+                    <title>checkRetirementAge('M', 60, 6)</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <description type='text'>Если возраст превышает пенсионный возраст на момент возврата кредита --> кредит не выдаётся</description>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

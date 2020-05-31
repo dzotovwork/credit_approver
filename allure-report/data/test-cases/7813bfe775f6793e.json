@@ -1,0 +1,82 @@
+{
+  "uid" : "7813bfe775f6793e",
+  "name" : "Для заемщика с источником дохода: собственный бизнес",
+  "fullName" : "Калькуляция кредита В зависимости от источника дохода.Для заемщика с источником дохода: собственный бизнес",
+  "historyId" : "177819bf7587d095899c36abb59dcb5",
+  "time" : {
+    "start" : 1590950922865,
+    "stop" : 1590950922869,
+    "duration" : 4
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "calc {\"age\":20,\"sex\":\"F\",\"money_income\":\"собственный бизнес\",\"last_year_money\":10,\"rating\":0,\"credit\":1,\"time\":10,\"goal\":\"автокредит\"}",
+      "time" : {
+        "start" : 1590950922866,
+        "stop" : 1590950922869,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "6e886f94fc4876c0",
+        "name" : "Данные: ",
+        "source" : "6e886f94fc4876c0.json",
+        "type" : "application/json",
+        "size" : 156
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Калькуляция кредита"
+  }, {
+    "name" : "feature",
+    "value" : "В зависимости от источника дохода"
+  }, {
+    "name" : "suite",
+    "value" : "Калькуляция кредита В зависимости от источника дохода"
+  }, {
+    "name" : "testClass",
+    "value" : "Калькуляция кредита В зависимости от источника дохода"
+  }, {
+    "name" : "testMethod",
+    "value" : "Для заемщика с источником дохода: собственный бизнес"
+  }, {
+    "name" : "package",
+    "value" : "Калькуляция кредита В зависимости от источника дохода"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7813bfe775f6793e.json",
+  "parameterValues" : [ ]
+}

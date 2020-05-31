@@ -1,0 +1,85 @@
+{
+  "uid" : "27c3aa242c5d2dbf",
+  "name" : "Для заемщика с источником дохода: пассивный доход и запрашиваемой суммой: 1 млн",
+  "fullName" : "Расчет одобренной суммы кредита В зависимости от источника дохода Источник дохода: пассивный доход.Для заемщика с источником дохода: пассивный доход и запрашиваемой суммой: 1 млн",
+  "historyId" : "a4d5ec9d292133a55124179a6b593385",
+  "time" : {
+    "start" : 1590950922447,
+    "stop" : 1590950922447,
+    "duration" : 0
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "calc {\"age\":20,\"sex\":\"M\",\"money_income\":\"пассивный доход\",\"last_year_money\":10,\"rating\":0,\"credit\":1,\"time\":10,\"goal\":\"автокредит\"}",
+      "time" : {
+        "start" : 1590950922447,
+        "stop" : 1590950922447,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "718ad5e6f07c3357",
+        "name" : "Данные: ",
+        "source" : "718ad5e6f07c3357.json",
+        "type" : "application/json",
+        "size" : 150
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Расчет одобренной суммы кредита"
+  }, {
+    "name" : "feature",
+    "value" : "В зависимости от источника дохода"
+  }, {
+    "name" : "story",
+    "value" : "Источник дохода: пассивный доход"
+  }, {
+    "name" : "suite",
+    "value" : "Расчет одобренной суммы кредита В зависимости от источника дохода Источник дохода: пассивный доход"
+  }, {
+    "name" : "testClass",
+    "value" : "Расчет одобренной суммы кредита В зависимости от источника дохода Источник дохода: пассивный доход"
+  }, {
+    "name" : "testMethod",
+    "value" : "Для заемщика с источником дохода: пассивный доход и запрашиваемой суммой: 1 млн"
+  }, {
+    "name" : "package",
+    "value" : "Расчет одобренной суммы кредита В зависимости от источника дохода Источник дохода: пассивный доход"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "27c3aa242c5d2dbf.json",
+  "parameterValues" : [ ]
+}

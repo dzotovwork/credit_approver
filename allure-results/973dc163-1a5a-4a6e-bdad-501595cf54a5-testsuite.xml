@@ -1,0 +1,70 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1590950922426' stop='1590950922432'>
+    <name>Расчет одобренной суммы кредита В зависимости от источника дохода Источник дохода: собственный бизнес</name>
+    <title>Расчет одобренной суммы кредита В зависимости от источника дохода Источник дохода: собственный бизнес</title>
+    <test-cases>
+        <test-case start='1590950922426' status='passed' stop='1590950922431'>
+            <name>Для заемщика с источником дохода: собственный бизнес и запрашиваемой суммой: 10.1 млн</name>
+            <title>Для заемщика с источником дохода: собственный бизнес и запрашиваемой суммой: 10.1 млн</title>
+            <labels>
+                <label name='epic' value='Расчет одобренной суммы кредита'/>
+                <label name='feature' value='В зависимости от источника дохода'/>
+                <label name='story' value='Источник дохода: собственный бизнес'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1590950922427' status='passed' stop='1590950922430'>
+                    <name>calc {"age":20,"sex":"M","money_income":"собственный бизнес","last_year_money":10,"rating":1,"credit":10.1,"time":10,"goal":"автокредит"}</name>
+                    <title>calc {"age":20,"sex":"M","money_income":"собственный бизнес","last_year_money":10,"rating":1,"credit":10.1,"time":10,"goal":"автокредит"}</title>
+                    <attachments>
+                        <attachment title='Данные: ' source='5ecbe94b-f888-471b-a5eb-8ee3e082f8ec-attachment.json' type='application/json' size='132'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1590950922431' status='passed' stop='1590950922431'>
+            <name>Для заемщика с источником дохода: собственный бизнес и запрашиваемой суммой: 10 млн</name>
+            <title>Для заемщика с источником дохода: собственный бизнес и запрашиваемой суммой: 10 млн</title>
+            <labels>
+                <label name='epic' value='Расчет одобренной суммы кредита'/>
+                <label name='feature' value='В зависимости от источника дохода'/>
+                <label name='story' value='Источник дохода: собственный бизнес'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1590950922431' status='passed' stop='1590950922431'>
+                    <name>calc {"age":20,"sex":"M","money_income":"собственный бизнес","last_year_money":10,"rating":1,"credit":10,"time":10,"goal":"автокредит"}</name>
+                    <title>calc {"age":20,"sex":"M","money_income":"собственный бизнес","last_year_money":10,"rating":1,"credit":10,"time":10,"goal":"автокредит"}</title>
+                    <attachments>
+                        <attachment title='Данные: ' source='e0f12f5b-888d-45cc-ac8c-171c44e7ceb2-attachment.json' type='application/json' size='130'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1590950922431' status='passed' stop='1590950922432'>
+            <name>Для заемщика с источником дохода: собственный бизнес и запрашиваемой суммой: 9.99999 млн</name>
+            <title>Для заемщика с источником дохода: собственный бизнес и запрашиваемой суммой: 9.99999 млн</title>
+            <labels>
+                <label name='epic' value='Расчет одобренной суммы кредита'/>
+                <label name='feature' value='В зависимости от источника дохода'/>
+                <label name='story' value='Источник дохода: собственный бизнес'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1590950922431' status='passed' stop='1590950922432'>
+                    <name>calc {"age":20,"sex":"M","money_income":"собственный бизнес","last_year_money":10,"rating":1,"credit":9.99999,"time":10,"goal":"автокредит"}</name>
+                    <title>calc {"age":20,"sex":"M","money_income":"собственный бизнес","last_year_money":10,"rating":1,"credit":9.99999,"time":10,"goal":"автокредит"}</title>
+                    <attachments>
+                        <attachment title='Данные: ' source='ea2b848e-fdb1-4304-b2bb-efc19a3dbc9d-attachment.json' type='application/json' size='135'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

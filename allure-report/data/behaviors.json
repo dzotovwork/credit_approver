@@ -1,0 +1,693 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "Расчет одобренной суммы кредита",
+    "children" : [ {
+      "name" : "В зависимости от источника дохода",
+      "children" : [ {
+        "name" : "Источник дохода: собственный бизнес",
+        "children" : [ {
+          "name" : "Для заемщика с источником дохода: собственный бизнес и запрашиваемой суммой: 10.1 млн",
+          "uid" : "1fe349c481b2f65e",
+          "parentUid" : "e4c66529f41b8bc3dfc2e7f7516b4708",
+          "status" : "passed",
+          "time" : {
+            "start" : 1590950922426,
+            "stop" : 1590950922431,
+            "duration" : 5
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Для заемщика с источником дохода: собственный бизнес и запрашиваемой суммой: 10 млн",
+          "uid" : "a4d17059e38fdb25",
+          "parentUid" : "e4c66529f41b8bc3dfc2e7f7516b4708",
+          "status" : "passed",
+          "time" : {
+            "start" : 1590950922431,
+            "stop" : 1590950922431,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Для заемщика с источником дохода: собственный бизнес и запрашиваемой суммой: 9.99999 млн",
+          "uid" : "d46660f4fd4af52f",
+          "parentUid" : "e4c66529f41b8bc3dfc2e7f7516b4708",
+          "status" : "passed",
+          "time" : {
+            "start" : 1590950922431,
+            "stop" : 1590950922432,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "e4c66529f41b8bc3dfc2e7f7516b4708"
+      }, {
+        "name" : "Источник дохода: наёмный работник",
+        "children" : [ {
+          "name" : "Для заемщика с источником дохода: наёмный работник и запрашиваемой суммой: 5.1 млн",
+          "uid" : "2d4a18d3d57e0cd4",
+          "parentUid" : "ee7bcb604f14e2cff2b2426ea80ec1c5",
+          "status" : "passed",
+          "time" : {
+            "start" : 1590950922442,
+            "stop" : 1590950922443,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Для заемщика с источником дохода: наёмный работник и запрашиваемой суммой: 5 млн",
+          "uid" : "d1bd8e30c6fb248b",
+          "parentUid" : "ee7bcb604f14e2cff2b2426ea80ec1c5",
+          "status" : "passed",
+          "time" : {
+            "start" : 1590950922443,
+            "stop" : 1590950922443,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Для заемщика с источником дохода: наёмный работник и запрашиваемой суммой: 4.9 млн",
+          "uid" : "c116b583bb9ac921",
+          "parentUid" : "ee7bcb604f14e2cff2b2426ea80ec1c5",
+          "status" : "passed",
+          "time" : {
+            "start" : 1590950922443,
+            "stop" : 1590950922444,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "ee7bcb604f14e2cff2b2426ea80ec1c5"
+      }, {
+        "name" : "Источник дохода: пассивный доход",
+        "children" : [ {
+          "name" : "Для заемщика с источником дохода: пассивный доход и запрашиваемой суммой: 1.1 млн",
+          "uid" : "b4f5f7540fc769ba",
+          "parentUid" : "f1be2376c060d785d2002ffe04a3acb9",
+          "status" : "passed",
+          "time" : {
+            "start" : 1590950922446,
+            "stop" : 1590950922447,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Для заемщика с источником дохода: пассивный доход и запрашиваемой суммой: 0.99999 млн",
+          "uid" : "827f99a4fb87be1c",
+          "parentUid" : "f1be2376c060d785d2002ffe04a3acb9",
+          "status" : "passed",
+          "time" : {
+            "start" : 1590950922447,
+            "stop" : 1590950922448,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Для заемщика с источником дохода: пассивный доход и запрашиваемой суммой: 1 млн",
+          "uid" : "27c3aa242c5d2dbf",
+          "parentUid" : "f1be2376c060d785d2002ffe04a3acb9",
+          "status" : "passed",
+          "time" : {
+            "start" : 1590950922447,
+            "stop" : 1590950922447,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "f1be2376c060d785d2002ffe04a3acb9"
+      } ],
+      "uid" : "2b66aac4d0e079c2d603204a7f34f765"
+    }, {
+      "name" : "В зависимости от кредитного рейтинга",
+      "children" : [ {
+        "name" : "Рейтинг: 2",
+        "children" : [ {
+          "name" : "Для заемщика с рейтингом: 2 и запрашиваемой суммой: 10.1 млн",
+          "uid" : "88a84fe845f87e49",
+          "parentUid" : "12bef9c58587a4fc5b2adafb4da56aa5",
+          "status" : "passed",
+          "time" : {
+            "start" : 1590950923106,
+            "stop" : 1590950923111,
+            "duration" : 5
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Для заемщика с рейтингом: 2 и запрашиваемой суммой: 10 млн",
+          "uid" : "f9661373cfc9dcc4",
+          "parentUid" : "12bef9c58587a4fc5b2adafb4da56aa5",
+          "status" : "passed",
+          "time" : {
+            "start" : 1590950923111,
+            "stop" : 1590950923112,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Для заемщика с рейтингом: 2 и запрашиваемой суммой: 9.9 млн",
+          "uid" : "1e56b175082a0666",
+          "parentUid" : "12bef9c58587a4fc5b2adafb4da56aa5",
+          "status" : "passed",
+          "time" : {
+            "start" : 1590950923112,
+            "stop" : 1590950923113,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "12bef9c58587a4fc5b2adafb4da56aa5"
+      }, {
+        "name" : "Рейтинг: 0",
+        "children" : [ {
+          "name" : "Для заемщика с рейтингом: 0 и запрашиваемой суммой: 5.1 млн",
+          "uid" : "f9f2b6a67c72141d",
+          "parentUid" : "b4b557c7a4c3666642fed894457b4e7a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1590950923119,
+            "stop" : 1590950923120,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Для заемщика с рейтингом: 0 и запрашиваемой суммой: 5 млн",
+          "uid" : "71e0395b353fbb15",
+          "parentUid" : "b4b557c7a4c3666642fed894457b4e7a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1590950923121,
+            "stop" : 1590950923121,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Для заемщика с рейтингом: 0 и запрашиваемой суммой: 4.999 млн",
+          "uid" : "d05f95c9a966df7d",
+          "parentUid" : "b4b557c7a4c3666642fed894457b4e7a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1590950923121,
+            "stop" : 1590950923122,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "b4b557c7a4c3666642fed894457b4e7a"
+      }, {
+        "name" : "Рейтинг: -1",
+        "children" : [ {
+          "name" : "Для заемщика с рейтингом: -1 и запрашиваемой суммой: 1.1 млн",
+          "uid" : "d8f9b66014eb17bb",
+          "parentUid" : "7edfcbd7200e43515976632dcc7f1f22",
+          "status" : "passed",
+          "time" : {
+            "start" : 1590950923126,
+            "stop" : 1590950923127,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Для заемщика с рейтингом: -1 и запрашиваемой суммой: 1 млн",
+          "uid" : "a704e30eebfaec0a",
+          "parentUid" : "7edfcbd7200e43515976632dcc7f1f22",
+          "status" : "passed",
+          "time" : {
+            "start" : 1590950923127,
+            "stop" : 1590950923128,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Для заемщика с рейтингом: -1 и запрашиваемой суммой: 0.99999 млн",
+          "uid" : "259a2d066b4fe44f",
+          "parentUid" : "7edfcbd7200e43515976632dcc7f1f22",
+          "status" : "passed",
+          "time" : {
+            "start" : 1590950923128,
+            "stop" : 1590950923128,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "7edfcbd7200e43515976632dcc7f1f22"
+      } ],
+      "uid" : "c1f866f0c90126de17d3271c829c471b"
+    } ],
+    "uid" : "1e0c3b35530bb657de82d7572ba9406f"
+  }, {
+    "name" : "Валидация выдачи кредита",
+    "children" : [ {
+      "name" : "Проверка возраста",
+      "children" : [ {
+        "name" : "Мужчины",
+        "children" : [ {
+          "name" : "Возраст на момент возврата кредита = 65, кредит выдается",
+          "uid" : "42ecac3cd528b6c",
+          "parentUid" : "89b64447f9076ea82ceb3f97fc1fde82",
+          "status" : "passed",
+          "time" : {
+            "start" : 1590950922652,
+            "stop" : 1590950922654,
+            "duration" : 2
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Возраст на момент возврата кредита < 65, кредит выдается",
+          "uid" : "b60ed159839c37ce",
+          "parentUid" : "89b64447f9076ea82ceb3f97fc1fde82",
+          "status" : "passed",
+          "time" : {
+            "start" : 1590950922654,
+            "stop" : 1590950922655,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Возраст на момент возврата кредита = 66",
+          "uid" : "f62c75a5db4144df",
+          "parentUid" : "89b64447f9076ea82ceb3f97fc1fde82",
+          "status" : "passed",
+          "time" : {
+            "start" : 1590950922655,
+            "stop" : 1590950922655,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "89b64447f9076ea82ceb3f97fc1fde82"
+      }, {
+        "name" : "Женщины",
+        "children" : [ {
+          "name" : "Возраст на момент возврата кредита < 60, кредит выдается",
+          "uid" : "9e37de09236d49f5",
+          "parentUid" : "dcbad5d9cc2c5ac1ae3407e72e242cc7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1590950922661,
+            "stop" : 1590950922662,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Возраст на момент возврата кредита = 60, кредит выдается",
+          "uid" : "1ca26d9fa042d0b6",
+          "parentUid" : "dcbad5d9cc2c5ac1ae3407e72e242cc7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1590950922661,
+            "stop" : 1590950922661,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Возраст на момент возврата кредита = 61, кредит не выдается",
+          "uid" : "514d42e989f23b5c",
+          "parentUid" : "dcbad5d9cc2c5ac1ae3407e72e242cc7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1590950922662,
+            "stop" : 1590950922662,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "dcbad5d9cc2c5ac1ae3407e72e242cc7"
+      } ],
+      "uid" : "d9a7b619dacb04954f56db3011635dfe"
+    }, {
+      "name" : "Валидация срока и суммы кредита",
+      "children" : [ {
+        "name" : "Запрошенная сумма 600000, срок 2 года, годовой доход 900000",
+        "uid" : "acd56e477a3a7a",
+        "parentUid" : "f24d3b6b6e4949c600d8d54ec2c9c430",
+        "status" : "passed",
+        "time" : {
+          "start" : 1590950922664,
+          "stop" : 1590950922664,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Запрошенная сумма 599999, срок 2 года, годовой доход 900000",
+        "uid" : "1f0387c84d3f29cd",
+        "parentUid" : "f24d3b6b6e4949c600d8d54ec2c9c430",
+        "status" : "passed",
+        "time" : {
+          "start" : 1590950922664,
+          "stop" : 1590950922665,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Запрошенная сумма 600001, срок 2 года, годовой доход 900000",
+        "uid" : "8542bd1c2c104b59",
+        "parentUid" : "f24d3b6b6e4949c600d8d54ec2c9c430",
+        "status" : "passed",
+        "time" : {
+          "start" : 1590950922665,
+          "stop" : 1590950922671,
+          "duration" : 6
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f24d3b6b6e4949c600d8d54ec2c9c430"
+    }, {
+      "name" : "Валидация кредитного рейтинга",
+      "children" : [ {
+        "name" : "Кредитный рейтинг: -2",
+        "uid" : "c32ddbc064cc4b8a",
+        "parentUid" : "6b17b5747cbdb48a0718b5120ecbab04",
+        "status" : "passed",
+        "time" : {
+          "start" : 1590950922673,
+          "stop" : 1590950922673,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Кредитный рейтинг: !-1",
+        "uid" : "95114bc16cfefabd",
+        "parentUid" : "6b17b5747cbdb48a0718b5120ecbab04",
+        "status" : "passed",
+        "time" : {
+          "start" : 1590950922673,
+          "stop" : 1590950922674,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6b17b5747cbdb48a0718b5120ecbab04"
+    }, {
+      "name" : "Валидация источника дохода",
+      "children" : [ {
+        "name" : "Источник дохода: !безработный",
+        "uid" : "7a55177f57d40819",
+        "parentUid" : "4f2fdbab323f4e7a1edbd10e3706ae8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1590950922675,
+          "stop" : 1590950922676,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Источник дохода: безработный",
+        "uid" : "568058525e51b441",
+        "parentUid" : "4f2fdbab323f4e7a1edbd10e3706ae8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1590950922675,
+          "stop" : 1590950922675,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4f2fdbab323f4e7a1edbd10e3706ae8d"
+    }, {
+      "name" : "Валидация годового платежа и годового дохода",
+      "children" : [ {
+        "name" : "Годовой платеж с процентами равен половине дохода",
+        "uid" : "6d69ea5bab459bb3",
+        "parentUid" : "d765f7459e1587c0995a3dc0a8ffa186",
+        "status" : "passed",
+        "time" : {
+          "start" : 1590950922677,
+          "stop" : 1590950922678,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Годовой платеж с процентами меньше половины дохода",
+        "uid" : "b6c3a4fd6860ad79",
+        "parentUid" : "d765f7459e1587c0995a3dc0a8ffa186",
+        "status" : "passed",
+        "time" : {
+          "start" : 1590950922678,
+          "stop" : 1590950922678,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Годовой платеж с процентами больше половины дохода",
+        "uid" : "bae4490b64887ee",
+        "parentUid" : "d765f7459e1587c0995a3dc0a8ffa186",
+        "status" : "passed",
+        "time" : {
+          "start" : 1590950922678,
+          "stop" : 1590950922678,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d765f7459e1587c0995a3dc0a8ffa186"
+    } ],
+    "uid" : "cd766a53878885cfe58a05aeda4c039d"
+  }, {
+    "name" : "Калькуляция кредита",
+    "children" : [ {
+      "name" : "В зависимости от источника дохода",
+      "children" : [ {
+        "name" : "Для заемщика с источником дохода: собственный бизнес",
+        "uid" : "7813bfe775f6793e",
+        "parentUid" : "bb1abfc3070dd277de2bd8f1f2443383",
+        "status" : "passed",
+        "time" : {
+          "start" : 1590950922865,
+          "stop" : 1590950922869,
+          "duration" : 4
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Для заемщика с источником дохода: наёмный работник",
+        "uid" : "858744d1b8dd80ad",
+        "parentUid" : "bb1abfc3070dd277de2bd8f1f2443383",
+        "status" : "passed",
+        "time" : {
+          "start" : 1590950922869,
+          "stop" : 1590950922870,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Для заемщика с источником дохода: пассивный доход",
+        "uid" : "6d17ba0df5aebb14",
+        "parentUid" : "bb1abfc3070dd277de2bd8f1f2443383",
+        "status" : "passed",
+        "time" : {
+          "start" : 1590950922870,
+          "stop" : 1590950922870,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "bb1abfc3070dd277de2bd8f1f2443383"
+    }, {
+      "name" : "В зависимости от суммы кредита",
+      "children" : [ {
+        "name" : "Запрашиваемая сумма кредита: 5 млн",
+        "uid" : "583ec4c6f351f48c",
+        "parentUid" : "ee40a0e7c1b216e34e43cb93a3aee4ff",
+        "status" : "passed",
+        "time" : {
+          "start" : 1590950922877,
+          "stop" : 1590950922878,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Запрашиваемая сумма кредита: 10 млн",
+        "uid" : "7254776be941684e",
+        "parentUid" : "ee40a0e7c1b216e34e43cb93a3aee4ff",
+        "status" : "passed",
+        "time" : {
+          "start" : 1590950922877,
+          "stop" : 1590950922877,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Запрашиваемая сумма кредита: 1 млн",
+        "uid" : "9bc96be756e5a720",
+        "parentUid" : "ee40a0e7c1b216e34e43cb93a3aee4ff",
+        "status" : "passed",
+        "time" : {
+          "start" : 1590950922878,
+          "stop" : 1590950922879,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Запрашиваемая сумма кредита: 0.1 млн",
+        "uid" : "4e463125addea66f",
+        "parentUid" : "ee40a0e7c1b216e34e43cb93a3aee4ff",
+        "status" : "passed",
+        "time" : {
+          "start" : 1590950922879,
+          "stop" : 1590950922880,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Запрашиваемая сумма кредита: 0.5 млн",
+        "uid" : "46ee667680cf447a",
+        "parentUid" : "ee40a0e7c1b216e34e43cb93a3aee4ff",
+        "status" : "passed",
+        "time" : {
+          "start" : 1590950922879,
+          "stop" : 1590950922879,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ee40a0e7c1b216e34e43cb93a3aee4ff"
+    }, {
+      "name" : "В зависимости от кредитного рейтинга",
+      "children" : [ {
+        "name" : "Кредитный рейтинг заемщика: 2 млн",
+        "uid" : "b143a815e1194ffe",
+        "parentUid" : "87f248f974ab4761c49055d9c7ff10f2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1590950922883,
+          "stop" : 1590950922884,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Кредитный рейтинг заемщика: 1 млн",
+        "uid" : "31acd6436cb1658a",
+        "parentUid" : "87f248f974ab4761c49055d9c7ff10f2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1590950922884,
+          "stop" : 1590950922884,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Кредитный рейтинг заемщика: 0 млн",
+        "uid" : "ae43ee5f459a69e6",
+        "parentUid" : "87f248f974ab4761c49055d9c7ff10f2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1590950922884,
+          "stop" : 1590950922885,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Кредитный рейтинг заемщика: -1 млн",
+        "uid" : "210a5c71dcc9829b",
+        "parentUid" : "87f248f974ab4761c49055d9c7ff10f2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1590950922885,
+          "stop" : 1590950922885,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "87f248f974ab4761c49055d9c7ff10f2"
+    }, {
+      "name" : "В зависимости от цели кредита",
+      "children" : [ {
+        "name" : "Цель кредита заемщика: автокредит млн",
+        "uid" : "ba9404c58ccbff4a",
+        "parentUid" : "18e0bbd36175d11b325a4ec97c769805",
+        "status" : "passed",
+        "time" : {
+          "start" : 1590950922889,
+          "stop" : 1590950922890,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Цель кредита заемщика: потребительский млн",
+        "uid" : "63b522eb3947ed4c",
+        "parentUid" : "18e0bbd36175d11b325a4ec97c769805",
+        "status" : "passed",
+        "time" : {
+          "start" : 1590950922890,
+          "stop" : 1590950922890,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Цель кредита заемщика: развитие бизнеса млн",
+        "uid" : "67b03e46c780f7b",
+        "parentUid" : "18e0bbd36175d11b325a4ec97c769805",
+        "status" : "passed",
+        "time" : {
+          "start" : 1590950922890,
+          "stop" : 1590950922891,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Цель кредита заемщика: ипотека млн",
+        "uid" : "a4963e7aab00c654",
+        "parentUid" : "18e0bbd36175d11b325a4ec97c769805",
+        "status" : "passed",
+        "time" : {
+          "start" : 1590950922891,
+          "stop" : 1590950922892,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "18e0bbd36175d11b325a4ec97c769805"
+    } ],
+    "uid" : "2fa5d579c9e08174d2e16becb621d4ef"
+  } ]
+}

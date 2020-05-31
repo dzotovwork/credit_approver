@@ -1,0 +1,79 @@
+{
+  "uid" : "42ecac3cd528b6c",
+  "name" : "Возраст на момент возврата кредита = 65, кредит выдается",
+  "fullName" : "Валидация выдачи кредита Проверка возраста Мужчины.Возраст на момент возврата кредита = 65, кредит выдается",
+  "historyId" : "315117330e6d9bdb733ffcbf3745ccc5",
+  "time" : {
+    "start" : 1590950922652,
+    "stop" : 1590950922654,
+    "duration" : 2
+  },
+  "description" : "Если возраст превышает пенсионный возраст на момент возврата кредита --> кредит не выдаётся",
+  "descriptionHtml" : "<p>Если возраст превышает пенсионный возраст на момент возврата кредита --&gt; кредит не выдаётся</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "checkRetirementAge('M', 60, 5)",
+      "time" : {
+        "start" : 1590950922653,
+        "stop" : 1590950922654,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Валидация выдачи кредита"
+  }, {
+    "name" : "feature",
+    "value" : "Проверка возраста"
+  }, {
+    "name" : "story",
+    "value" : "Мужчины"
+  }, {
+    "name" : "suite",
+    "value" : "Валидация выдачи кредита Проверка возраста Мужчины"
+  }, {
+    "name" : "testClass",
+    "value" : "Валидация выдачи кредита Проверка возраста Мужчины"
+  }, {
+    "name" : "testMethod",
+    "value" : "Возраст на момент возврата кредита = 65, кредит выдается"
+  }, {
+    "name" : "package",
+    "value" : "Валидация выдачи кредита Проверка возраста Мужчины"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "42ecac3cd528b6c.json",
+  "parameterValues" : [ ]
+}

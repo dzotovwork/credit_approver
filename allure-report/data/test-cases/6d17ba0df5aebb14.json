@@ -1,0 +1,82 @@
+{
+  "uid" : "6d17ba0df5aebb14",
+  "name" : "Для заемщика с источником дохода: пассивный доход",
+  "fullName" : "Калькуляция кредита В зависимости от источника дохода.Для заемщика с источником дохода: пассивный доход",
+  "historyId" : "d78c4dfb8f8bfbab9bd03a3932afae00",
+  "time" : {
+    "start" : 1590950922870,
+    "stop" : 1590950922870,
+    "duration" : 0
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "calc {\"age\":20,\"sex\":\"F\",\"money_income\":\"пассивный доход\",\"last_year_money\":10,\"rating\":0,\"credit\":1,\"time\":10,\"goal\":\"автокредит\"}",
+      "time" : {
+        "start" : 1590950922870,
+        "stop" : 1590950922870,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "9270494bc6a57d5",
+        "name" : "Данные: ",
+        "source" : "9270494bc6a57d5.json",
+        "type" : "application/json",
+        "size" : 150
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Калькуляция кредита"
+  }, {
+    "name" : "feature",
+    "value" : "В зависимости от источника дохода"
+  }, {
+    "name" : "suite",
+    "value" : "Калькуляция кредита В зависимости от источника дохода"
+  }, {
+    "name" : "testClass",
+    "value" : "Калькуляция кредита В зависимости от источника дохода"
+  }, {
+    "name" : "testMethod",
+    "value" : "Для заемщика с источником дохода: пассивный доход"
+  }, {
+    "name" : "package",
+    "value" : "Калькуляция кредита В зависимости от источника дохода"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6d17ba0df5aebb14.json",
+  "parameterValues" : [ ]
+}
