@@ -8,9 +8,9 @@ export default (goal) => {
         case 'ипотека':
             return -0.02;
         case 'развитие бизнеса':
-            return -0.05;
+            return -0.005;
         case 'потребительский':
-            return 0.15;
+            return 0.015;
         default:
             return 0;
     }

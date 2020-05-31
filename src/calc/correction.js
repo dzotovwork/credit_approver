@@ -28,7 +28,7 @@ const getMaxCreditByRating = (data) => {
     switch (data.rating) {
         case -1:
             return 1;
-        case -0:
+        case 0:
             return 5;
         case 1:
         case 2:
