@@ -6,11 +6,11 @@
 export default (goal) => {
     switch (goal) {
         case 'ипотека':
-            return -2;
+            return -0.02;
         case 'развитие бизнеса':
-            return 0.5;
+            return -0.05;
         case 'потребительский':
-            return 1.5;
+            return 0.15;
         default:
             return 0;
     }

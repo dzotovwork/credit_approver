@@ -7,11 +7,11 @@
 export default (rating) => {
     switch (rating) {
         case -1:
-            return 1.5;
+            return 0.015;
         case 1:
-            return -0.25;
+            return -0.0025;
         case 2:
-            return -0.75;
+            return -0.0075;
         default:
             return 0;
     }

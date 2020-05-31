@@ -7,11 +7,11 @@
 export default (sourceOfIncome) => {
     switch (sourceOfIncome) {
         case 'пассивный доход':
-            return 0.5;
+            return 0.005;
         case 'наёмный работник':
-            return -0.25;
+            return -0.0025;
         case 'собственный бизнес':
-            return 0.25;
+            return 0.0025;
         default:
             return 0;
     }
