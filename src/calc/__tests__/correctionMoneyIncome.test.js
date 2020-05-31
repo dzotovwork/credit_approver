@@ -62,5 +62,27 @@ describe('Расчет одобренной суммы кредита', () => {
                 });
             });
         });
+        describe('Источник дохода: пассивный доход', () => {
+            const params = [
+                { credit: 1.1, result: 0.205 },
+                { credit: 1, result: 0.205 },
+                { credit: 0.99999, result: 0.204998 },
+            ];
+            const cloneData = cloneDeep(data);
+            cloneData.rating = 0;
+            cloneData.money_income = 'пассивный доход';
+            beforeEach(() => {
+                reporter.story('Источник дохода: пассивный доход');
+            });
+            params.forEach((param) => {
+                it(`Для заемщика с источником дохода: пассивный доход и запрашиваемой суммой: ${param.credit} млн`, async () => {
+                    cloneData.credit = param.credit;
+                    reporter.startStep(`calc ${JSON.stringify(cloneData)}`);
+                    reporter.addAttachment('Данные: ', JSON.stringify(cloneData), 'application/json');
+                    expect(calc(cloneData)).toBe(param.result);
+                    reporter.endStep();
+                });
+            });
+        });
     });
 });
