@@ -10,6 +10,8 @@ import correction from './correction.js';
  */
 
 export default (data) => {
-    console.log(`correction = ${correction(data, data.credit)}`);
-    return (correction(data, data.credit) * (1 + data.time * (0.1 + rate(data)))) / data.time;
+    return (
+        Math.floor(((correction(data, data.credit) * (1 + data.time * (0.1 + rate(data)))) / data.time) * 1000000) /
+        1000000
+    );
 };
