@@ -11,7 +11,10 @@ import correction from './correction.js';
 
 export default (data) => {
     return (
-        Math.floor(((correction(data, data.credit) * (1 + data.time * (0.1 + rate(data)))) / data.time) * 1000000) /
-        1000000
+        Math.floor(
+            ((correction(data, data.credit) * (1 + data.time * (0.1 + rate(data, correction(data, data.credit))))) /
+                data.time) *
+                1000000
+        ) / 1000000
     );
 };

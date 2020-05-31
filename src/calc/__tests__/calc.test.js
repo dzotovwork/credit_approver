@@ -36,7 +36,7 @@ describe('Калькуляция кредита', () => {
     });
     describe('В зависимости от суммы кредита', () => {
         const params = [
-            { credit: 10, result: 0.19 },
+            { credit: 10, result: 0.9625 },
             { credit: 5, result: 0.977551 },
         ];
         beforeEach(() => {
