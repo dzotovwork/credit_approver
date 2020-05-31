@@ -1,0 +1,209 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "Возраст на момент возврата кредита = 60, кредит выдается",
+    "uid" : "fc6763371f74af08",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1590941354874,
+      "stop" : 1590941354874,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Источник дохода: безработный",
+    "uid" : "92a1398419568f2c",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1590941354880,
+      "stop" : 1590941354881,
+      "duration" : 1
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Запрошенная сумма 600000, срок 2 года, годовой доход 900000",
+    "uid" : "2f5cb8d62e4a636e",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1590941354876,
+      "stop" : 1590941354877,
+      "duration" : 1
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Годовой платеж с процентами больше половины дохода",
+    "uid" : "c22d22b4d379250f",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1590941354883,
+      "stop" : 1590941354883,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Кредитный рейтинг: -2",
+    "uid" : "b67cb1b787cc841e",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1590941354878,
+      "stop" : 1590941354879,
+      "duration" : 1
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Для заемщика с источником дохода: пассивный доход",
+    "uid" : "b10eeb237a106fe5",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1590941354639,
+      "stop" : 1590941354640,
+      "duration" : 1
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Для заемщика с источником дохода: собственный бизнес",
+    "uid" : "ced87865c7227450",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1590941354634,
+      "stop" : 1590941354639,
+      "duration" : 5
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Для заемщика с источником дохода: наёмный работник",
+    "uid" : "e30e7b13a0b17384",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1590941354639,
+      "stop" : 1590941354639,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Возраст на момент возврата кредита = 66",
+    "uid" : "55fcaa6fc7e05510",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1590941354868,
+      "stop" : 1590941354869,
+      "duration" : 1
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Запрашиваемая сумма кредита: 10 млн",
+    "uid" : "6efe8099281ef68b",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1590941354647,
+      "stop" : 1590941354648,
+      "duration" : 1
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Возраст на момент возврата кредита = 65, кредит выдается",
+    "uid" : "111abed1f6092280",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1590941354866,
+      "stop" : 1590941354868,
+      "duration" : 2
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Возраст на момент возврата кредита = 61, кредит не выдается",
+    "uid" : "5fcda442aacb5361",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1590941354874,
+      "stop" : 1590941354875,
+      "duration" : 1
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Источник дохода: !безработный",
+    "uid" : "c23cbd5dd0539d17",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1590941354881,
+      "stop" : 1590941354881,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Кредитный рейтинг: !-1",
+    "uid" : "d37fc76a4635e535",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1590941354879,
+      "stop" : 1590941354879,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Запрошенная сумма 600001, срок 2 года, годовой доход 900000",
+    "uid" : "5035e53f95cc58ce",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1590941354877,
+      "stop" : 1590941354877,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Запрашиваемая сумма кредита: 5 млн",
+    "uid" : "273cd39f62c00828",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1590941354648,
+      "stop" : 1590941354648,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Годовой платеж с процентами меньше половины дохода",
+    "uid" : "4afff111d56e1838",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1590941354882,
+      "stop" : 1590941354883,
+      "duration" : 1
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  } ]
+}

@@ -1,0 +1,253 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "Калькуляция кредита",
+    "children" : [ {
+      "name" : "В зависимости от источника дохода",
+      "children" : [ {
+        "name" : "Для заемщика с источником дохода: собственный бизнес",
+        "uid" : "ced87865c7227450",
+        "parentUid" : "bb1abfc3070dd277de2bd8f1f2443383",
+        "status" : "passed",
+        "time" : {
+          "start" : 1590941354634,
+          "stop" : 1590941354639,
+          "duration" : 5
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Для заемщика с источником дохода: пассивный доход",
+        "uid" : "b10eeb237a106fe5",
+        "parentUid" : "bb1abfc3070dd277de2bd8f1f2443383",
+        "status" : "passed",
+        "time" : {
+          "start" : 1590941354639,
+          "stop" : 1590941354640,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Для заемщика с источником дохода: наёмный работник",
+        "uid" : "e30e7b13a0b17384",
+        "parentUid" : "bb1abfc3070dd277de2bd8f1f2443383",
+        "status" : "passed",
+        "time" : {
+          "start" : 1590941354639,
+          "stop" : 1590941354639,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "bb1abfc3070dd277de2bd8f1f2443383"
+    }, {
+      "name" : "В зависимости от суммы кредита",
+      "children" : [ {
+        "name" : "Запрашиваемая сумма кредита: 10 млн",
+        "uid" : "6efe8099281ef68b",
+        "parentUid" : "ee40a0e7c1b216e34e43cb93a3aee4ff",
+        "status" : "passed",
+        "time" : {
+          "start" : 1590941354647,
+          "stop" : 1590941354648,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Запрашиваемая сумма кредита: 5 млн",
+        "uid" : "273cd39f62c00828",
+        "parentUid" : "ee40a0e7c1b216e34e43cb93a3aee4ff",
+        "status" : "passed",
+        "time" : {
+          "start" : 1590941354648,
+          "stop" : 1590941354648,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ee40a0e7c1b216e34e43cb93a3aee4ff"
+    } ],
+    "uid" : "2fa5d579c9e08174d2e16becb621d4ef"
+  }, {
+    "name" : "Валидация выдачи кредита",
+    "children" : [ {
+      "name" : "Проверка возраста",
+      "children" : [ {
+        "name" : "Мужчины",
+        "children" : [ {
+          "name" : "Возраст на момент возврата кредита = 65, кредит выдается",
+          "uid" : "111abed1f6092280",
+          "parentUid" : "89b64447f9076ea82ceb3f97fc1fde82",
+          "status" : "passed",
+          "time" : {
+            "start" : 1590941354866,
+            "stop" : 1590941354868,
+            "duration" : 2
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Возраст на момент возврата кредита = 66",
+          "uid" : "55fcaa6fc7e05510",
+          "parentUid" : "89b64447f9076ea82ceb3f97fc1fde82",
+          "status" : "passed",
+          "time" : {
+            "start" : 1590941354868,
+            "stop" : 1590941354869,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "89b64447f9076ea82ceb3f97fc1fde82"
+      }, {
+        "name" : "Женщины",
+        "children" : [ {
+          "name" : "Возраст на момент возврата кредита = 60, кредит выдается",
+          "uid" : "fc6763371f74af08",
+          "parentUid" : "dcbad5d9cc2c5ac1ae3407e72e242cc7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1590941354874,
+            "stop" : 1590941354874,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Возраст на момент возврата кредита = 61, кредит не выдается",
+          "uid" : "5fcda442aacb5361",
+          "parentUid" : "dcbad5d9cc2c5ac1ae3407e72e242cc7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1590941354874,
+            "stop" : 1590941354875,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "dcbad5d9cc2c5ac1ae3407e72e242cc7"
+      } ],
+      "uid" : "d9a7b619dacb04954f56db3011635dfe"
+    }, {
+      "name" : "Валидация срока и суммы кредита",
+      "children" : [ {
+        "name" : "Запрошенная сумма 600000, срок 2 года, годовой доход 900000",
+        "uid" : "2f5cb8d62e4a636e",
+        "parentUid" : "f24d3b6b6e4949c600d8d54ec2c9c430",
+        "status" : "passed",
+        "time" : {
+          "start" : 1590941354876,
+          "stop" : 1590941354877,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Запрошенная сумма 600001, срок 2 года, годовой доход 900000",
+        "uid" : "5035e53f95cc58ce",
+        "parentUid" : "f24d3b6b6e4949c600d8d54ec2c9c430",
+        "status" : "passed",
+        "time" : {
+          "start" : 1590941354877,
+          "stop" : 1590941354877,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f24d3b6b6e4949c600d8d54ec2c9c430"
+    }, {
+      "name" : "Валидация кредитного рейтинга",
+      "children" : [ {
+        "name" : "Кредитный рейтинг: -2",
+        "uid" : "b67cb1b787cc841e",
+        "parentUid" : "6b17b5747cbdb48a0718b5120ecbab04",
+        "status" : "passed",
+        "time" : {
+          "start" : 1590941354878,
+          "stop" : 1590941354879,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Кредитный рейтинг: !-1",
+        "uid" : "d37fc76a4635e535",
+        "parentUid" : "6b17b5747cbdb48a0718b5120ecbab04",
+        "status" : "passed",
+        "time" : {
+          "start" : 1590941354879,
+          "stop" : 1590941354879,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6b17b5747cbdb48a0718b5120ecbab04"
+    }, {
+      "name" : "Валидация источника дохода",
+      "children" : [ {
+        "name" : "Источник дохода: безработный",
+        "uid" : "92a1398419568f2c",
+        "parentUid" : "4f2fdbab323f4e7a1edbd10e3706ae8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1590941354880,
+          "stop" : 1590941354881,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Источник дохода: !безработный",
+        "uid" : "c23cbd5dd0539d17",
+        "parentUid" : "4f2fdbab323f4e7a1edbd10e3706ae8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1590941354881,
+          "stop" : 1590941354881,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4f2fdbab323f4e7a1edbd10e3706ae8d"
+    }, {
+      "name" : "Валидация годового платежа и годового дохода",
+      "children" : [ {
+        "name" : "Годовой платеж с процентами меньше половины дохода",
+        "uid" : "4afff111d56e1838",
+        "parentUid" : "d765f7459e1587c0995a3dc0a8ffa186",
+        "status" : "passed",
+        "time" : {
+          "start" : 1590941354882,
+          "stop" : 1590941354883,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Годовой платеж с процентами больше половины дохода",
+        "uid" : "c22d22b4d379250f",
+        "parentUid" : "d765f7459e1587c0995a3dc0a8ffa186",
+        "status" : "passed",
+        "time" : {
+          "start" : 1590941354883,
+          "stop" : 1590941354883,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d765f7459e1587c0995a3dc0a8ffa186"
+    } ],
+    "uid" : "cd766a53878885cfe58a05aeda4c039d"
+  } ]
+}

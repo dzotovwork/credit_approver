@@ -5,7 +5,9 @@
     "main": "app.js",
     "type": "module",
     "scripts": {
-        "test": "jest"
+        "test": "jest",
+        "report": "npx allure generate --clean ./allure-results && npx allure open",
+        "allure:clear:results": "find -E allure-results -regex '.*(log|png|xml)$' | xargs rm -f"
     },
     "repository": {
         "type": "git",

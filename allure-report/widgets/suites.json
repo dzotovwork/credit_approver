@@ -1,0 +1,92 @@
+{
+  "total" : 8,
+  "items" : [ {
+    "uid" : "bcd455976ff59ed19791a65c2f5851d3",
+    "name" : "Калькуляция кредита В зависимости от источника дохода",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 3
+    }
+  }, {
+    "uid" : "f51d6d08ff4736afb44d039a7c4ed13a",
+    "name" : "Калькуляция кредита В зависимости от суммы кредита",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "fd53224033176a00d2b7a8ff489914bd",
+    "name" : "Валидация выдачи кредита Проверка возраста Мужчины",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "57f593af40ba2ebf47d6dd8472de5a97",
+    "name" : "Валидация выдачи кредита Проверка возраста Женщины",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "002ceef79f1afed680ff26b61afb0bd8",
+    "name" : "Валидация выдачи кредита Валидация срока и суммы кредита",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "5531f2b19f89f3fbffe926f107f4d20c",
+    "name" : "Валидация выдачи кредита Валидация кредитного рейтинга",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "f954d416774318b42c3721c7bc9b9b7f",
+    "name" : "Валидация выдачи кредита Валидация источника дохода",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "96a746cc30ebb81062690df5adec8df6",
+    "name" : "Валидация выдачи кредита Валидация годового платежа и годового дохода",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    }
+  } ]
+}

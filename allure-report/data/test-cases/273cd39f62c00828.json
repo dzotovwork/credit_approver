@@ -1,0 +1,82 @@
+{
+  "uid" : "273cd39f62c00828",
+  "name" : "Запрашиваемая сумма кредита: 5 млн",
+  "fullName" : "Калькуляция кредита В зависимости от суммы кредита.Запрашиваемая сумма кредита: 5 млн",
+  "historyId" : "55a9c7ad0b8bbe4424d60f7cfe14b1d2",
+  "time" : {
+    "start" : 1590941354648,
+    "stop" : 1590941354648,
+    "duration" : 0
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "calc {\"age\":20,\"sex\":\"F\",\"money_income\":\"собственный бизнес\",\"last_year_money\":10,\"rating\":1,\"credit\":5,\"time\":10,\"goal\":\"автокредит\"}",
+      "time" : {
+        "start" : 1590941354648,
+        "stop" : 1590941354648,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "3c26fb5fdea906bd",
+        "name" : "Данные: ",
+        "source" : "3c26fb5fdea906bd.json",
+        "type" : "application/json",
+        "size" : 156
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Калькуляция кредита"
+  }, {
+    "name" : "feature",
+    "value" : "В зависимости от суммы кредита"
+  }, {
+    "name" : "suite",
+    "value" : "Калькуляция кредита В зависимости от суммы кредита"
+  }, {
+    "name" : "testClass",
+    "value" : "Калькуляция кредита В зависимости от суммы кредита"
+  }, {
+    "name" : "testMethod",
+    "value" : "Запрашиваемая сумма кредита: 5 млн"
+  }, {
+    "name" : "package",
+    "value" : "Калькуляция кредита В зависимости от суммы кредита"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "273cd39f62c00828.json",
+  "parameterValues" : [ ]
+}

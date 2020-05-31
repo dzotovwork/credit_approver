@@ -1,0 +1,241 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "Калькуляция кредита В зависимости от источника дохода",
+    "children" : [ {
+      "name" : "Для заемщика с источником дохода: собственный бизнес",
+      "uid" : "ced87865c7227450",
+      "parentUid" : "b0f797de0a634a3038180c6ae50d513c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590941354634,
+        "stop" : 1590941354639,
+        "duration" : 5
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Для заемщика с источником дохода: пассивный доход",
+      "uid" : "b10eeb237a106fe5",
+      "parentUid" : "b0f797de0a634a3038180c6ae50d513c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590941354639,
+        "stop" : 1590941354640,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Для заемщика с источником дохода: наёмный работник",
+      "uid" : "e30e7b13a0b17384",
+      "parentUid" : "b0f797de0a634a3038180c6ae50d513c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590941354639,
+        "stop" : 1590941354639,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "b0f797de0a634a3038180c6ae50d513c"
+  }, {
+    "name" : "Калькуляция кредита В зависимости от суммы кредита",
+    "children" : [ {
+      "name" : "Запрашиваемая сумма кредита: 10 млн",
+      "uid" : "6efe8099281ef68b",
+      "parentUid" : "74f4426f877e2ff50cab4ff558999e41",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590941354647,
+        "stop" : 1590941354648,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Запрашиваемая сумма кредита: 5 млн",
+      "uid" : "273cd39f62c00828",
+      "parentUid" : "74f4426f877e2ff50cab4ff558999e41",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590941354648,
+        "stop" : 1590941354648,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "74f4426f877e2ff50cab4ff558999e41"
+  }, {
+    "name" : "Валидация выдачи кредита Проверка возраста Мужчины",
+    "children" : [ {
+      "name" : "Возраст на момент возврата кредита = 65, кредит выдается",
+      "uid" : "111abed1f6092280",
+      "parentUid" : "f8326031a6f71ce040b23c9f149e21b0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590941354866,
+        "stop" : 1590941354868,
+        "duration" : 2
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Возраст на момент возврата кредита = 66",
+      "uid" : "55fcaa6fc7e05510",
+      "parentUid" : "f8326031a6f71ce040b23c9f149e21b0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590941354868,
+        "stop" : 1590941354869,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "f8326031a6f71ce040b23c9f149e21b0"
+  }, {
+    "name" : "Валидация выдачи кредита Проверка возраста Женщины",
+    "children" : [ {
+      "name" : "Возраст на момент возврата кредита = 60, кредит выдается",
+      "uid" : "fc6763371f74af08",
+      "parentUid" : "542ac7a4106e48f15b50d89a22243862",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590941354874,
+        "stop" : 1590941354874,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Возраст на момент возврата кредита = 61, кредит не выдается",
+      "uid" : "5fcda442aacb5361",
+      "parentUid" : "542ac7a4106e48f15b50d89a22243862",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590941354874,
+        "stop" : 1590941354875,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "542ac7a4106e48f15b50d89a22243862"
+  }, {
+    "name" : "Валидация выдачи кредита Валидация срока и суммы кредита",
+    "children" : [ {
+      "name" : "Запрошенная сумма 600000, срок 2 года, годовой доход 900000",
+      "uid" : "2f5cb8d62e4a636e",
+      "parentUid" : "02e16b8a5ec877912b8c0f2ed1300f83",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590941354876,
+        "stop" : 1590941354877,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Запрошенная сумма 600001, срок 2 года, годовой доход 900000",
+      "uid" : "5035e53f95cc58ce",
+      "parentUid" : "02e16b8a5ec877912b8c0f2ed1300f83",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590941354877,
+        "stop" : 1590941354877,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "02e16b8a5ec877912b8c0f2ed1300f83"
+  }, {
+    "name" : "Валидация выдачи кредита Валидация кредитного рейтинга",
+    "children" : [ {
+      "name" : "Кредитный рейтинг: -2",
+      "uid" : "b67cb1b787cc841e",
+      "parentUid" : "89fe1bc8ae7bf9cb42a36d422b1b09f0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590941354878,
+        "stop" : 1590941354879,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Кредитный рейтинг: !-1",
+      "uid" : "d37fc76a4635e535",
+      "parentUid" : "89fe1bc8ae7bf9cb42a36d422b1b09f0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590941354879,
+        "stop" : 1590941354879,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "89fe1bc8ae7bf9cb42a36d422b1b09f0"
+  }, {
+    "name" : "Валидация выдачи кредита Валидация источника дохода",
+    "children" : [ {
+      "name" : "Источник дохода: безработный",
+      "uid" : "92a1398419568f2c",
+      "parentUid" : "bbdb1bf8af7b34c2db62c08d9a724624",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590941354880,
+        "stop" : 1590941354881,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Источник дохода: !безработный",
+      "uid" : "c23cbd5dd0539d17",
+      "parentUid" : "bbdb1bf8af7b34c2db62c08d9a724624",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590941354881,
+        "stop" : 1590941354881,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "bbdb1bf8af7b34c2db62c08d9a724624"
+  }, {
+    "name" : "Валидация выдачи кредита Валидация годового платежа и годового дохода",
+    "children" : [ {
+      "name" : "Годовой платеж с процентами меньше половины дохода",
+      "uid" : "4afff111d56e1838",
+      "parentUid" : "54ccff3ec7b567b38a8724ce320681aa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590941354882,
+        "stop" : 1590941354883,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Годовой платеж с процентами больше половины дохода",
+      "uid" : "c22d22b4d379250f",
+      "parentUid" : "54ccff3ec7b567b38a8724ce320681aa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590941354883,
+        "stop" : 1590941354883,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "54ccff3ec7b567b38a8724ce320681aa"
+  } ]
+}
