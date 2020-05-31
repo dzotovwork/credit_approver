@@ -57,4 +57,21 @@ describe('Калькуляция кредита', () => {
             });
         });
     });
+    describe('В зависимости от кредитного рейтинга', () => {
+        const params = [{ rating: 2, result: 0.1975 }];
+        beforeEach(() => {
+            reporter.feature('В зависимости от кредитного рейтинга');
+        });
+        params.forEach((param) => {
+            it(`Кредитный рейтинг заемщика: ${param.rating} млн`, async () => {
+                const cloneData = cloneDeep(data);
+                cloneData.rating = param.rating;
+                cloneData.money_income = 'пассивный доход';
+                reporter.startStep(`calc ${JSON.stringify(cloneData)}`);
+                reporter.addAttachment('Данные: ', JSON.stringify(cloneData), 'application/json');
+                expect(calc(cloneData)).toBe(param.result);
+                reporter.endStep();
+            });
+        });
+    });
 });
