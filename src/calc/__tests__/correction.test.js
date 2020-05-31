@@ -19,7 +19,11 @@ describe('Расчет одобренной суммы кредита', () => {
             reporter.feature('В зависимости от кредитного рейтинга');
         });
         describe('Рейтинг: 2', () => {
-            const params = [{ credit: 10.1, result: 1.85 }];
+            const params = [
+                { credit: 10.1, result: 1.85 },
+                { credit: 10, result: 1.85 },
+                { credit: 9.9, result: 1.831932 }
+            ];
             const cloneData = cloneDeep(data);
             cloneData.rating = 2;
             beforeEach(() => {
