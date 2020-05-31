@@ -5,7 +5,7 @@ let data = {
     sex: 'F',
     money_income: 'собственный бизнес',
     last_year_money: 10,
-    rating: 0,
+    rating: 1,
     credit: 1,
     time: 10,
     goal: 'автокредит',
@@ -36,7 +36,7 @@ describe('Калькуляция кредита', () => {
     });
     describe('В зависимости от суммы кредита', () => {
         const params = [
-            { credit: 10, result: 0.9625 },
+            { credit: 10, result: 0.977551 },
             { credit: 5, result: 0.977551 },
         ];
         beforeEach(() => {
