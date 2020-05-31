@@ -1,0 +1,45 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1590941354880' stop='1590941354881'>
+    <name>Валидация выдачи кредита Валидация источника дохода</name>
+    <title>Валидация выдачи кредита Валидация источника дохода</title>
+    <test-cases>
+        <test-case start='1590941354880' status='passed' stop='1590941354881'>
+            <name>Источник дохода: безработный</name>
+            <title>Источник дохода: безработный</title>
+            <labels>
+                <label name='epic' value='Валидация выдачи кредита'/>
+                <label name='feature' value='Валидация источника дохода'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1590941354881' status='passed' stop='1590941354881'>
+                    <name>checkMoneyIncome('безработный')</name>
+                    <title>checkMoneyIncome('безработный')</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <description type='text'>Если кредитный рейтинг -2 --> кредит не выдаётся</description>
+        </test-case>
+        <test-case start='1590941354881' status='passed' stop='1590941354881'>
+            <name>Источник дохода: !безработный</name>
+            <title>Источник дохода: !безработный</title>
+            <labels>
+                <label name='epic' value='Валидация выдачи кредита'/>
+                <label name='feature' value='Валидация источника дохода'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1590941354881' status='passed' stop='1590941354881'>
+                    <name>checkMoneyIncome('наёмный работник')</name>
+                    <title>checkMoneyIncome('наёмный работник')</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <description type='text'>Если кредитный рейтинг -2 --> кредит не выдаётся</description>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

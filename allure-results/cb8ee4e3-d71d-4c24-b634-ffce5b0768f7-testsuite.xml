@@ -1,0 +1,45 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1590941354876' stop='1590941354877'>
+    <name>Валидация выдачи кредита Валидация срока и суммы кредита</name>
+    <title>Валидация выдачи кредита Валидация срока и суммы кредита</title>
+    <test-cases>
+        <test-case start='1590941354876' status='passed' stop='1590941354877'>
+            <name>Запрошенная сумма 600000, срок 2 года, годовой доход 900000</name>
+            <title>Запрошенная сумма 600000, срок 2 года, годовой доход 900000</title>
+            <labels>
+                <label name='epic' value='Валидация выдачи кредита'/>
+                <label name='feature' value='Валидация срока и суммы кредита'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1590941354876' status='passed' stop='1590941354876'>
+                    <name>checkMoneyTime(0.6, 2, 0.9)</name>
+                    <title>checkMoneyTime(0.6, 2, 0.9)</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <description type='text'>Если результат деления запрошенной суммы на срок погашения в годах более трети годового дохода --> кредит не выдаётся</description>
+        </test-case>
+        <test-case start='1590941354877' status='passed' stop='1590941354877'>
+            <name>Запрошенная сумма 600001, срок 2 года, годовой доход 900000</name>
+            <title>Запрошенная сумма 600001, срок 2 года, годовой доход 900000</title>
+            <labels>
+                <label name='epic' value='Валидация выдачи кредита'/>
+                <label name='feature' value='Валидация срока и суммы кредита'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1590941354877' status='passed' stop='1590941354877'>
+                    <name>checkMoneyTime(0.600001, 2, 0.9)</name>
+                    <title>checkMoneyTime(0.600001, 2, 0.9)</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <description type='text'>Если результат деления запрошенной суммы на срок погашения в годах более трети годового дохода --> кредит не выдаётся</description>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

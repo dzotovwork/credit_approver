@@ -1,0 +1,67 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1590941354634' stop='1590941354641'>
+    <name>Калькуляция кредита В зависимости от источника дохода</name>
+    <title>Калькуляция кредита В зависимости от источника дохода</title>
+    <test-cases>
+        <test-case start='1590941354634' status='passed' stop='1590941354639'>
+            <name>Для заемщика с источником дохода: собственный бизнес</name>
+            <title>Для заемщика с источником дохода: собственный бизнес</title>
+            <labels>
+                <label name='epic' value='Калькуляция кредита'/>
+                <label name='feature' value='В зависимости от источника дохода'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1590941354635' status='passed' stop='1590941354638'>
+                    <name>calc {"age":20,"sex":"F","money_income":"собственный бизнес","last_year_money":10,"rating":1,"credit":1,"time":10,"goal":"автокредит"}</name>
+                    <title>calc {"age":20,"sex":"F","money_income":"собственный бизнес","last_year_money":10,"rating":1,"credit":1,"time":10,"goal":"автокредит"}</title>
+                    <attachments>
+                        <attachment title='Данные: ' source='e66ebd8a-0478-4051-9f37-ae316f3c6d0e-attachment.json' type='application/json' size='129'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1590941354639' status='passed' stop='1590941354639'>
+            <name>Для заемщика с источником дохода: наёмный работник</name>
+            <title>Для заемщика с источником дохода: наёмный работник</title>
+            <labels>
+                <label name='epic' value='Калькуляция кредита'/>
+                <label name='feature' value='В зависимости от источника дохода'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1590941354639' status='passed' stop='1590941354639'>
+                    <name>calc {"age":20,"sex":"F","money_income":"наёмный работник","last_year_money":10,"rating":1,"credit":1,"time":10,"goal":"автокредит"}</name>
+                    <title>calc {"age":20,"sex":"F","money_income":"наёмный работник","last_year_money":10,"rating":1,"credit":1,"time":10,"goal":"автокредит"}</title>
+                    <attachments>
+                        <attachment title='Данные: ' source='369d3522-2474-4104-8b24-e0060013b129-attachment.json' type='application/json' size='127'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1590941354639' status='passed' stop='1590941354640'>
+            <name>Для заемщика с источником дохода: пассивный доход</name>
+            <title>Для заемщика с источником дохода: пассивный доход</title>
+            <labels>
+                <label name='epic' value='Калькуляция кредита'/>
+                <label name='feature' value='В зависимости от источника дохода'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1590941354639' status='passed' stop='1590941354640'>
+                    <name>calc {"age":20,"sex":"F","money_income":"пассивный доход","last_year_money":10,"rating":1,"credit":1,"time":10,"goal":"автокредит"}</name>
+                    <title>calc {"age":20,"sex":"F","money_income":"пассивный доход","last_year_money":10,"rating":1,"credit":1,"time":10,"goal":"автокредит"}</title>
+                    <attachments>
+                        <attachment title='Данные: ' source='4a7acaa0-b338-4e84-acf3-cc47651a3764-attachment.json' type='application/json' size='126'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
