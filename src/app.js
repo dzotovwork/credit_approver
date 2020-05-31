@@ -30,5 +30,5 @@ btn.addEventListener('click', () => {
     }
 });
 btnAllure.addEventListener('click', () => {
-    window.open('./allure-report/index.html');
+    window.open('./allure-report/index.html#behaviors');
 });
