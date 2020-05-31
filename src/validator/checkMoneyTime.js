@@ -4,6 +4,4 @@
  * @param time - срок кредита
  * @param money - доход за последний год
  */
-export default (credit, time, money) => {
-    return credit / time < money / 3;
-};
+export default (credit, time, money) => credit / time < money / 3;

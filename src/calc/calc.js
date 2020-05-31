@@ -9,6 +9,4 @@ import correction from './correction.js';
  * @param data
  */
 
-export default (data) => {
-    return (correction(data, data.credit) * (1 + data.time * (0.1 + rate(data)))) / data.time;
-};
+export default (data) => (correction(data, data.credit) * (1 + data.time * (0.1 + rate(data)))) / data.time;

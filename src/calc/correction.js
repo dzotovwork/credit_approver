@@ -3,9 +3,7 @@
  * @param data
  * @param creditSum
  */
-export default (data, creditSum) => {
-    return Math.min(creditSum, getMaxCreditByRating(data), getMaxCreditByMoneyIncome(data));
-};
+export default (data, creditSum) => Math.min(creditSum, getMaxCreditByRating(data), getMaxCreditByMoneyIncome(data));
 /**
  * Расчет максимального кредита исходя из источника дохода
  * При пассивном доходе выдаётся кредит на сумму до 1 млн, наёмным работникам - до 5 млн, собственное дело - до 10 млн
@@ -35,4 +33,4 @@ const getMaxCreditByRating = (data) => {
         case 1 | 2:
             return 10;
     }
-}
+};
