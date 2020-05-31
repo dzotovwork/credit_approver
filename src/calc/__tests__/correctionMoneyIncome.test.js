@@ -19,7 +19,11 @@ describe('Расчет одобренной суммы кредита', () => {
             reporter.feature('В зависимости от источника дохода');
         });
         describe('Источник дохода: собственный бизнес', () => {
-            const params = [{ credit: 10.1, result: 1.9 }];
+            const params = [
+                { credit: 10.1, result: 1.9 },
+                { credit: 10, result: 1.9 },
+                { credit: 9.99999, result: 1.899998 },
+            ];
             const cloneData = cloneDeep(data);
             cloneData.rating = 1;
             cloneData.money_income = 'собственный бизнес';
