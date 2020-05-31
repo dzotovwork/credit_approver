@@ -1,5 +1,5 @@
 import checkConditions from "./validator/checkConditions.js";
-import calc from "./calc.js";
+import calc from "./calc/calc.js";
 
 const btn = document.getElementById('send');
 

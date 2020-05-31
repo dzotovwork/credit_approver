@@ -1,4 +1,4 @@
-import rate from "./rate.js";
+import rate from "./rate/rate.js";
 
 /**
  * метод расчета годового платежа
