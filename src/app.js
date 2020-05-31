@@ -1,3 +1,6 @@
+import checkRetirementAge from "./checkRetirementAge.js";
+import checkMoneyTime from "./checkMoneyTime.js";
+
 const btn = document.getElementById('send');
 
 btn.addEventListener('click', () => {
@@ -11,6 +14,7 @@ btn.addEventListener('click', () => {
         time: Number(document.getElementById('time').value),
         goal: document.getElementById('goal').value,
     };
+    console.log('hello from button');
     let result = 'Кредит выдаётся';
     if (!checkConditions(data)) {
         result = 'Кредит не выдаётся';
@@ -19,32 +23,6 @@ btn.addEventListener('click', () => {
         alert(`${result} с годовым платежом: ${calc(data)} млн.`);
     }
 });
-const checkConditions = (data) => {
-    return (
-        checkRetirementAge(data.sex, data.age, data.time) &&
-        checkMoneyTime(data.credit, data.time, data.last_year_money) &&
-        checkRating(data.rating) &&
-        checkMoneyIncome(data.money_income) &&
-        checkPayment(data)
-    );
-};
-/**
- * Если в источнике дохода указано "безработный" --> кредит не выдаётся
- * @param sourceOfIncome
- */
-const checkMoneyIncome = (sourceOfIncome) => {
-    return sourceOfIncome !== 'безработный';
-};
-/**
- * Если результат деления запрошенной суммы на срок погашения в годах более трети годового дохода --> кредит не выдаётся
- * @param credit - сумма запрашиваемого кредита
- * @param time - срок кредита
- * @param money - доход за последний год
- */
-const checkMoneyTime = (credit, time, money) => {
-    return credit / time < money / 3;
-};
-
 /**
  * Если годовой платёж (включая проценты) больше половины дохода --> кредит не выдаётся
  * @param data
@@ -59,38 +37,7 @@ const checkPayment = (data) => {
 const checkRating = (rating) => {
     return rating !== -2;
 };
-/**
- * Проверка возраста заемщика
- * Если возраст превышает пенсионный возраст на момент возврата кредита --> кредит не выдаётся
- * @param sex - пол заемщика
- * @param age - возраст заемщика
- * @param time - срок кредита
- */
-const checkRetirementAge = (sex, age, time) => {
-    return sex === 'M' ? __checkMale(age, time) : __checkFemale(age, time);
-};
 
-/**
- * Проверка мужчин
- * @param age
- * @param time
- * @private
- */
-const __checkMale = (age, time) => {
-    const retirementAge = 65;
-    return age + time < retirementAge;
-};
-
-/**
- * Проверка женщин
- * @param age
- * @param time
- * @private
- */
-const __checkFemale = (age, time) => {
-    const retirementAge = 60;
-    return age + time < retirementAge;
-};
 /**
  * метод расчета годового платежа
  * Базовая ставка - 10%
@@ -99,7 +46,7 @@ const __checkFemale = (age, time) => {
  * @param data
  */
 const calc = (data) => {
-    return (data.credit * (1 + data.time * (10 + rate(data)))) / data.time;
+    return (data.credit * (1 + data.time * (0.1 + rate(data)))) / data.time;
 };
 /**
  * Расчет модификатора в зависимости от цели кредита
