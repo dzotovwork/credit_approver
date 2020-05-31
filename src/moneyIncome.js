@@ -12,7 +12,5 @@ export default (sourceOfIncome) => {
             return -0.0025;
         case 'собственный бизнес':
             return 0.0025;
-        default:
-            return 0;
     }
 };
