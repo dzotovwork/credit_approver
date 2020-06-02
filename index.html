@@ -1,74 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
     <title>Credit approver</title>
     <link href="styles.css" rel="stylesheet">
+
 <body cz-shortcut-listen="true" data-gr-c-s-loaded="true">
 
 <form>
     <div class="main">
-        <div class="field">
-            <label for="age">Возраст [not negative int], лет</label>
-            <input id="age" min="0" required="" type="number">
+        <div class="row">
+            <div class="col-35">
+                <label for="age">Возраст [not negative int], лет</label>
+            </div>
+            <div class="col-40">
+                <input id="age" min="0" required="" type="number">
+            </div>
         </div>
-        <div class="field">
-            <label for="sex">Пол</label>
-            <select id="sex" name="sex" required="" type="text">
-                <option disabled="" selected="" value=""></option>
-                <option value="M">M</option>
-                <option value="F">F</option>
-            </select>
+        <div class="row">
+            <div class="col-35">
+                <label for="sex">Пол</label>
+            </div>
+            <div class="col-40">
+                <select id="sex" name="sex" required="" type="text">
+                    <option disabled="" selected="" value=""></option>
+                    <option value="M">M</option>
+                    <option value="F">F</option>
+                </select>
+            </div>
         </div>
-        <div class="field">
-            <label for="money_income">Источник дохода</label>
-            <select id="money_income" name="money_income" required="" type="text">
-                <option disabled="" selected="" value=""></option>
-                <option value="пассивный доход">пассивный доход</option>
-                <option value="наёмный работник">наёмный работник</option>
-                <option value="собственный бизнес">собственный бизнес</option>
-                <option value="безработный">безработный</option>
-            </select>
+        <div class="row">
+            <div class="col-35">
+                <label for="money_income">Источник дохода</label>
+            </div>
+            <div class="col-40">
+                <select id="money_income" name="money_income" required="" type="text">
+                    <option disabled="" selected="" value=""></option>
+                    <option value="пассивный доход">пассивный доход</option>
+                    <option value="наёмный работник">наёмный работник</option>
+                    <option value="собственный бизнес">собственный бизнес</option>
+                    <option value="безработный">безработный</option>
+                </select>
+            </div>
         </div>
-        <div class="field">
-            <label for="last_year_money">Доход за последний год [int], млн</label>
-            <input id="last_year_money" required="" type="number">
+        <div class="row">
+            <div class="col-35">
+                <label for="last_year_money">Доход за последний год [int], млн</label>
+            </div>
+            <div class="col-40">
+                <input id="last_year_money" required="" type="number">
+            </div>
         </div>
-        <div class="field">
-            <label for="rating">Кредитный рейтинг</label>
-            <select id="rating" name="rating" required="" type="number">
-                <option disabled="" selected="" value=""></option>
-                <option value="-2">-2</option>
-                <option value="-1">-1</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-            </select>
+        <div class="row">
+            <div class="col-35">
+                <label for="rating">Кредитный рейтинг</label>
+            </div>
+            <div class="col-40">
+                <select id="rating" name="rating" required="" type="number">
+                    <option disabled="" selected="" value=""></option>
+                    <option value="-2">-2</option>
+                    <option value="-1">-1</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+            </div>
         </div>
-        <div class="field">
-            <label for="credit">Запрошенная сумма [0.1 .. 10], млн</label>
-            <input id="credit" required="" step="0.1" type="number">
+        <div class="row">
+            <div class="col-35">
+                <label for="credit">Запрошенная сумма [0.1 .. 10], млн</label>
+            </div>
+            <div class="col-40">
+                <input id="credit" required="" step="0.1" type="number">
+            </div>
         </div>
-        <div class="field">
-            <label for="time">Срок погашения [1..20], лет</label>
-            <input id="time" max="20" min="1" required="" type="number">
+        <div class="row">
+            <div class="col-35">
+                <label for="time">Срок погашения [1..20], лет</label>
+            </div>
+            <div class="col-40">
+                <input id="time" max="20" min="1" required="" type="number">
+            </div>
         </div>
-        <div class="field">
-            <label for="goal">Цель</label>
-            <select id="goal" name="goal" required="" type="number">
-                <option disabled="" selected="" value=""></option>
-                <option value="ипотека">ипотека</option>
-                <option value="развитие бизнеса">развитие бизнеса</option>
-                <option value="автокредит">автокредит</option>
-                <option value="потребительский">потребительский</option>
-            </select>
+        <div class="row">
+            <div class="col-35">
+                <label for="goal">Цель</label>
+            </div>
+            <div class="col-40">
+                <select id="goal" name="goal" required="" type="number">
+                    <option disabled="" selected="" value=""></option>
+                    <option value="ипотека">ипотека</option>
+                    <option value="развитие бизнеса">развитие бизнеса</option>
+                    <option value="автокредит">автокредит</option>
+                    <option value="потребительский">потребительский</option>
+                </select>
+            </div>
         </div>
-        <button class="btn" id="send" name="action" type="button">
-            Получить кредит
-        </button>
-        <button class="btn" id="allure" name="action" type="button">
-            Посмотреть отчет аллюра
-        </button>
+        <div class="row">
+            <div class="col-1">
+                <div class="button">
+                    <button class="btn" id="send" name="action" type="button">
+                        Получить кредит
+                    </button>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="button">
+                    <button class="btn" id="allure" name="action" type="button">
+                        Посмотреть отчёт аллюра
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
 </form>
 <script src="./src/app.js" type="module"></script>

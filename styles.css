@@ -1,37 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    max-width: 50vw;
+    font-size: 18px;
 }
 
-button {
-    margin-top: 20px;
-    font-size: 14px;
+.row {
+    margin-top: 5px;
 }
 
-.field {
-    text-align: right;
-    line-height: 30px;
-    background-color: rgb(167, 167, 170);
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(184, 89, 89);
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 4px;
+    resize: vertical;
+    margin-left: 10px;
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 4px;
+    resize: vertical;
+    margin-left: 10px;
 }
 
 label {
-    float: left;
-    font-size: 16px;
-    background-color: rgb(167, 167, 170);
-    padding-right: 50px;
+    padding-left: 150px;
+    padding-right: 10px;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
 }
 
 .main {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.col-35 {
     float: left;
+    width: 35%;
+    margin-top: 6px;
 }
 
-input:invalid {
-    width: 150px;
-    padding: 1px 0px 1px 1px;
-    border: 1px solid red;
+.col-40 {
+    float: left;
+    width: 40%;
+    margin-top: 6px;
 }
 
-select:invalid {
-    width: 155px;
-    padding: 2px 0px 1px 1px;
-    border: 1px solid red;
+.col-1 {
+    float: left;
+    margin-left: 150px;
+    margin-top: 10px;
+}
+
+.col-2 {
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 1000px) {
+    .col-35,
+    .col-40,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
 }
